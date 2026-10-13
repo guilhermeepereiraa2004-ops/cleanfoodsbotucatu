@@ -1,0 +1,2892 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===================== SEO PRIMÁRIO ===================== -->
+    <title>Cardápio | CleanFoods Botucatu</title>
+    <meta name="description" content="Veja o cardápio completo da CleanFoods Botucatu. Marmitas de frango, patinho e opções gourmet. Escolha e peça agora.">
+    <meta name="keywords" content="cardápio marmita Botucatu, marmita fitness Botucatu, comida saudável Botucatu, marmita gourmet Botucatu, CleanFoods Botucatu">
+    <meta name="author" content="CleanFoods Botucatu">
+    <meta name="robots" content="index, follow">
+
+    <!-- ===================== OPEN GRAPH (WhatsApp / Instagram) ===================== -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CleanFoods Botucatu">
+    <meta property="og:title" content="Cardápio | CleanFoods Botucatu">
+    <meta property="og:description" content="Conheça as marmitas saudáveis da CleanFoods Botucatu e escolha suas refeições.">
+    <meta property="og:image" content="hero-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Cardápio de marmitas saudáveis CleanFoods Botucatu">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- ===================== TWITTER CARD ===================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cardápio | CleanFoods Botucatu">
+    <meta name="twitter:description" content="Marmitas fitness de frango, patinho e gourmet a partir de R$19,50. Monte seu prato e peça agora!">
+    <meta name="twitter:image" content="hero-image.png">
+    <meta name="twitter:image:alt" content="Cardápio de marmitas saudáveis CleanFoods Botucatu">
+
+    <!-- ===================== FAVICON ===================== -->
+    <link rel="icon" type="image/png" href="logo-botucatu.png">
+    <link rel="apple-touch-icon" href="logo-botucatu.png">
+
+    <!-- ===================== SCHEMA.ORG JSON-LD ===================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "index.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Cardápio Completo",
+              "item": "cardapio-completo.html"
+            }
+          ]
+        },
+        {
+          "@type": "Menu",
+          "name": "Cardápio Completo CleanFoods",
+          "description": "Cardápio completo de marmitas saudáveis da CleanFoods Botucatu. Opções de frango, patinho bovino e gourmet nos tamanhos P e G.",
+          "url": "cardapio-completo.html",
+          "provider": {
+            "@type": "Restaurant",
+            "@id": "#organization",
+            "name": "CleanFoods Botucatu",
+            "telephone": "+5514991725724",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Botucatu",
+              "addressRegion": "SP",
+              "addressCountry": "BR"
+            }
+          },
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Linha Frango",
+              "description": "Marmitas fitness de frango desfiado ou grelhado com acompanhamentos naturais"
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Linha Patinho",
+              "description": "Marmitas fitness de patinho bovino magro com acompanhamentos nutritivos"
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Linha Gourmet",
+              "description": "Marmitas fitness premium com ingredientes selecionados"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mercado Pago SDK -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cf-black': '#0a0a0a',
+                        'cf-yellow': '#e0a800',
+                        'cf-darkgray': '#121212',
+                        'cf-gray': '#222222',
+                    },
+                    fontFamily: {
+                        'heading': ['"Clash Display"', 'sans-serif'],
+                        'body': ['"Satoshi"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --black: #0a0a0a;
+            --yellow: #e0a800;
+        }
+
+        body {
+            background-color: var(--black);
+            color: #ffffff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--yellow);
+            border-radius: 10px;
+        }
+
+        .btn-primary {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--yellow);
+            color: var(--black);
+            font-family: 'Satoshi', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            letter-spacing: 0.05em;
+            border-radius: 4px;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, background 0.3s ease;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 14px 0 rgba(224, 168, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(224, 168, 0, 0.3);
+            background: #fff;
+            border-color: #fff;
+        }
+
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+
+        .btn-outline {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: var(--yellow);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            padding: 1rem 2.5rem;
+            font-size: 1.125rem;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            border: 1px solid var(--yellow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background: var(--yellow);
+            color: var(--black);
+            box-shadow: 0 4px 14px 0 rgba(246,197,0,0.39);
+        }
+
+        /* Glassmorphism for minimal cards */
+        .glass-card {
+            background: rgba(18, 18, 18, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease;
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(224, 168, 0, 0.2);
+            transform: translateY(-4px);
+        }
+
+        /* Attention Grabber (More subtle) */
+        @keyframes subtle-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(246, 197, 0, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(246, 197, 0, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(246, 197, 0, 0);
+            }
+        }
+
+        .btn-attention {
+            animation: subtle-pulse 2s infinite;
+        }
+
+        /* Image treatment */
+        .img-elegant {
+            border-radius: 8px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .img-elegant:hover {
+            opacity: 0.9;
+        }
+
+        /* Asymmetric Grid for Menu */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cart Drawer Slide */
+        #cart-drawer.open {
+            transform: translateX(0);
+        }
+
+        .cart-open-overflow {
+            overflow: hidden;
+        }
+
+        /* Hide elements for GSAP initialization */
+        .reveal-up,
+        .reveal-left,
+        .reveal-right {
+            visibility: visible;
+        }
+
+        /* Smoke Video Background (Subtle) */
+        #smoke-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            pointer-events: none;
+            object-fit: cover;
+            opacity: 0.3; /* reduced opacity for minimal vibe */
+            mix-blend-mode: screen;
+            transition: opacity 0.15s linear;
+        }
+
+        /* Responsive height limits ensuring proportional scaling on all screens */
+        @media (min-width: 1024px) {
+            #hero {
+                height: 100vh !important;
+                min-height: 100vh !important;
+                overflow: hidden !important;
+                padding-bottom: clamp(1rem, 2vh, 3rem) !important;
+            }
+
+            #hero-header-spacer {
+                height: clamp(70px, 14vh, 160px) !important;
+            }
+
+            header img {
+                height: clamp(10rem, 22vh, 22rem) !important;
+            }
+
+            #hero-container {
+                gap: clamp(1rem, 3vh, 4rem) !important;
+            }
+
+            #hero-text-column {
+                gap: clamp(0.5rem, 1.5vh, 1.5rem) !important;
+                margin-top: clamp(10px, 3vh, 80px) !important;
+            }
+
+            #hero-title {
+                font-size: clamp(2.5rem, 10vh, 7rem) !important;
+                line-height: 1 !important;
+            }
+
+            #hero-title .block {
+                margin-top: clamp(0.1rem, 1vh, 0.5rem) !important;
+            }
+
+            #hero-title .block:first-child {
+                margin-top: 0 !important;
+            }
+
+            #hero-image-container {
+                max-width: clamp(450px, 85vh, 1000px) !important;
+            }
+
+            #hero-subtitle {
+                font-size: clamp(0.875rem, 1.8vh, 1.125rem) !important;
+                max-width: clamp(300px, 45vh, 450px) !important;
+            }
+
+            #hero-cta {
+                font-size: clamp(0.9rem, 1.8vh, 1.1rem) !important;
+                padding: clamp(0.75rem, 1.5vh, 1rem) clamp(1.5rem, 3vh, 2rem) !important;
+            }
+        }
+    </style>
+    <style>
+        :root { --yellow:#ffc400; --black:#070707; }
+        body { background:radial-gradient(circle at 50% -10%,rgba(255,196,0,.14),transparent 34rem),linear-gradient(180deg,#070707,#0b0b0b); }
+        body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:.03; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+        header { position:absolute !important; height:6rem; padding:0 1.25rem !important; align-items:center !important; background:linear-gradient(180deg,rgba(7,7,7,.9),rgba(7,7,7,.2)); border-bottom:0; backdrop-filter:none; -webkit-backdrop-filter:none; mix-blend-mode:normal !important; }
+        header img { height:5rem !important; width:auto; filter:drop-shadow(0 8px 20px rgba(0,0,0,.35)); }
+        .menu-hero { padding-top:10rem !important; padding-bottom:4rem !important; }
+        .menu-hero h1 { font-size:clamp(3.6rem,9vw,8rem) !important; letter-spacing:-.055em !important; line-height:.88 !important; }
+        .eyebrow { letter-spacing:.22em; text-transform:uppercase; }
+        #dishes-grid > div { background:linear-gradient(145deg,rgba(27,27,27,.96),rgba(14,14,14,.96)) !important; border:1px solid rgba(255,255,255,.09) !important; border-radius:1.5rem !important; overflow:hidden; box-shadow:0 18px 55px rgba(0,0,0,.28) !important; transition:transform .35s ease,border-color .35s ease !important; }
+        #dishes-grid > div:hover { transform:translateY(-6px); border-color:rgba(255,196,0,.65) !important; }
+        #dishes-grid img { transition-duration:.7s !important; }
+        [id^="filter-btn-"] { border:1px solid rgba(255,255,255,.14) !important; border-radius:999px !important; padding:.75rem 1.35rem !important; font-size:.875rem !important; text-transform:none !important; letter-spacing:0 !important; }
+        @media(max-width:767px){ header img{height:4.25rem !important}.menu-hero{padding-top:8.5rem !important}.menu-hero h1{font-size:3.6rem !important} }
+    </style>
+</head>
+
+<body class="antialiased font-body relative">
+
+
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5514991725724" id="wa-floating-btn" target="_blank"
+        class="fixed bottom-6 right-6 w-16 h-16 bg-cf-yellow rounded-full flex items-center justify-center text-cf-black text-3xl z-40 shadow-[0_0_20px_rgba(246,197,0,0.5)] hover:scale-110 transition-transform cursor-hover shadow-lg border border-gray-800/50 rounded-lg hover:border-white">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Floating Cart Button -->
+    <button onclick="toggleCart()" id="floating-cart"
+        class="fixed bottom-24 right-6 w-16 h-16 bg-white rounded-full flex items-center justify-center text-cf-black text-2xl z-40 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-110 transition-transform cursor-hover shadow-lg border border-gray-800/50 rounded-lg hover:border-cf-yellow">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span id="cart-badge-float"
+            class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold border-2 border-cf-black hidden">0</span>
+    </button>
+
+    <!-- Header Minimal/Raw -->
+    <header
+        class="absolute top-0 w-full pt-4 pb-4 px-4 md:px-8 grid grid-cols-[1fr_auto_1fr] md:flex md:justify-between items-start z-40 mix-blend-difference">
+        <!-- Spacer for mobile to center logo -->
+        <div class="md:hidden"></div>
+
+        <a href="index.html" class="cursor-hover flex justify-center md:block mt-1 md:mt-0 z-50 relative">
+            <img src="logo-botucatu.png" alt="CleanFoods Botucatu"
+                class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-w-full object-contain">
+        </a>
+
+        <div class="flex items-center justify-end md:justify-start gap-3 sm:gap-4 md:gap-6 mt-2 md:mt-4">
+            <a href="index.html"
+                class="font-heading font-bold tracking-tight text-sm sm:text-base md:text-lg text-white hover:text-cf-yellow transition-colors tracking-widest cursor-hover">
+                <i class="fa-solid fa-arrow-left mr-1.5 text-xs"></i> INÍCIO
+            </a>
+            <a href="admin.html"
+                class="font-heading font-bold tracking-tight text-[10px] sm:text-xs md:text-sm text-cf-black bg-cf-yellow hover:bg-white hover:text-cf-black border border-cf-yellow hover:border-white px-2 py-1 transition-colors tracking-wider cursor-hover uppercase rounded-sm flex items-center gap-1 shadow-md">
+                ADMIN <i class="fa-solid fa-user-gear text-[10px]"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Banner / Title -->
+    <section class="menu-hero relative pt-28 md:pt-32 pb-2 overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <div class="eyebrow text-cf-yellow text-xs font-bold mb-5">Feito para a sua rotina</div>
+            <h1
+                class="font-heading tracking-tight text-[2.5rem] sm:text-[4rem] md:text-[6rem] leading-none text-white">
+                Nosso <span class="text-cf-yellow">cardápio</span>.
+            </h1>
+            <p class="font-body text-lg md:text-xl text-gray-400 mt-6 max-w-xl mx-auto leading-relaxed">
+                Refeições equilibradas, saborosas e práticas para você aproveitar melhor cada dia em Botucatu.
+            </p>
+            <a href="https://wa.me/5514991725724" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-7 text-cf-yellow font-bold border-b border-cf-yellow/50 pb-1 hover:text-white hover:border-white transition-colors">
+                <i class="fa-brands fa-whatsapp"></i> Fale com a CleanFoods Botucatu
+            </a>
+        </div>
+    </section>
+
+    <!-- Menu Section with Filters -->
+    <section class="pt-6 pb-12 relative z-10">
+        <div class="container mx-auto px-4">
+
+
+
+
+
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-16">
+                <button onclick="filterCategory('Todos')" id="filter-btn-Todos"
+                    class="bg-cf-yellow text-cf-black font-heading font-bold tracking-tight tracking-wider px-3 sm:px-6 py-2 sm:py-3 border-2 border-cf-yellow hover:bg-white hover:text-cf-black hover:border-white transition-all uppercase text-xs sm:text-base rounded-sm cursor-hover shadow-lg">
+                    Todos
+                </button>
+                <button onclick="filterCategory('Frango')" id="filter-btn-Frango"
+                    class="bg-cf-darkgray text-white font-heading font-bold tracking-tight tracking-wider px-3 sm:px-6 py-2 sm:py-3 border-2 border-cf-gray hover:bg-cf-yellow hover:text-cf-black hover:border-cf-yellow transition-all uppercase text-xs sm:text-base rounded-sm cursor-hover shadow-lg">
+                    Linha Frango
+                </button>
+                <button onclick="filterCategory('Patinho')" id="filter-btn-Patinho"
+                    class="bg-cf-darkgray text-white font-heading font-bold tracking-tight tracking-wider px-3 sm:px-6 py-2 sm:py-3 border-2 border-cf-gray hover:bg-cf-yellow hover:text-cf-black hover:border-cf-yellow transition-all uppercase text-xs sm:text-base rounded-sm cursor-hover shadow-lg">
+                    Linha Patinho
+                </button>
+                <button onclick="filterCategory('Gourmet')" id="filter-btn-Gourmet"
+                    class="bg-cf-darkgray text-white font-heading font-bold tracking-tight tracking-wider px-3 sm:px-6 py-2 sm:py-3 border-2 border-cf-gray hover:bg-cf-yellow hover:text-cf-black hover:border-cf-yellow transition-all uppercase text-xs sm:text-base rounded-sm cursor-hover shadow-lg">
+                    Linha Gourmet
+                </button>
+                <button onclick="filterCategory('Salgados')" id="filter-btn-Salgados"
+                    class="bg-cf-darkgray text-white font-heading font-bold tracking-tight tracking-wider px-3 sm:px-6 py-2 sm:py-3 border-2 border-cf-gray hover:bg-cf-yellow hover:text-cf-black hover:border-cf-yellow transition-all uppercase text-xs sm:text-base rounded-sm cursor-hover shadow-lg">
+                    Salgados e Doces Proteicos
+                </button>
+            </div>
+
+            <!-- Grid dynamically filled -->
+            <div id="dishes-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7">
+                <!-- Card dynamically loaded -->
+            </div>
+
+            <!-- Central CTA -->
+            <div class="mt-20 text-center">
+                <button onclick="toggleCart()" class="btn-primary text-xl sm:text-2xl px-10 py-5 cursor-hover">
+                    <i class="fa-solid fa-basket-shopping mr-2"></i> VER CARRINHO & FINALIZAR
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 pb-12 relative overflow-hidden border-t-2 border-cf-yellow/20">
+        <!-- Background decoration -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[1px] bg-gradient-to-r from-transparent via-cf-yellow to-transparent opacity-50"></div>
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-cf-yellow/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Central CTA & Branding -->
+            <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-16 reveal-up">
+                <img src="logo-botucatu.png" alt="CleanFoods Botucatu" class="w-64 mb-8">
+                <h2 class="font-heading font-semibold tracking-tight text-4xl sm:text-5xl text-white mb-4">
+                    Comida boa muda o <span class="text-cf-yellow">dia</span>.
+                </h2>
+                <p class="font-body text-gray-400 text-lg mb-10 max-w-xl mx-auto">
+                    Escolha suas refeições e deixe a parte prática com a gente.
+                </p>
+                <button onclick="toggleCart()" class="btn-primary">
+                    Ver Carrinho e Finalizar
+                </button>
+            </div>
+
+            <!-- Contact & Social Info -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-white/10 pt-12 mb-12 text-center sm:text-left reveal-up">
+                <div class="flex flex-col items-center sm:items-start group">
+                    <span class="text-cf-yellow mb-2"><i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i></span>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-widest mb-1 text-sm">WhatsApp</h4>
+                    <a href="https://wa.me/5514991725724" class="font-body text-gray-400 hover:text-white transition-colors">
+                        (14) 99172-5724
+                    </a>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <span class="text-cf-yellow mb-2"><i class="fa-brands fa-instagram text-2xl group-hover:scale-110 transition-transform"></i></span>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-widest mb-1 text-sm">Instagram</h4>
+                    <span class="font-body text-gray-400">
+                        CleanFoods Botucatu
+                    </span>
+                </div>
+                <div class="flex flex-col items-center sm:items-end group">
+                    <span class="text-cf-yellow mb-2"><i class="fa-solid fa-location-dot text-2xl group-hover:scale-110 transition-transform"></i></span>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-widest mb-1 text-sm">Localização</h4>
+                    <span class="font-body text-gray-400">
+                        Botucatu - SP
+                    </span>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-8 text-center md:text-left text-xs font-body text-gray-600 font-medium tracking-widest uppercase gap-4">
+                <div>
+                    © 2026 CLEANFOODS BOTUCATU · CNPJ 43.326.323/0001-82
+                </div>
+                <div>
+                    <a href="https://www.grpsantana.com.br/" target="_blank" class="text-gray-500 hover:text-white transition-colors cursor-hover flex items-center gap-2">
+                        <span>Desenvolvido por</span>
+                        <span class="font-bold text-cf-yellow">GRUPO SANTANA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer -->
+    <div id="cart-drawer"
+        class="fixed top-0 right-0 h-[100dvh] w-full max-w-md bg-cf-darkgray border-l-4 border-cf-yellow z-50 transform translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
+        <!-- Drawer Header -->
+        <div class="p-4 sm:p-6 border-b border-cf-gray flex justify-between items-center bg-cf-black">
+            <h3 class="font-heading font-bold tracking-tight text-2xl text-cf-yellow uppercase tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-basket-shopping"></i> Seu Carrinho
+            </h3>
+            <button onclick="toggleCart()"
+                class="text-gray-400 hover:text-white transition-colors text-2xl cursor-hover p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Drawer Content (Scrollable) -->
+        <div class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
+            <!-- Combo Progress Banner -->
+            <div id="combo-progress-container"
+                class="bg-cf-black border-2 border-cf-gray rounded p-4 text-center hidden">
+                <p id="combo-progress-text" class="text-white text-xs font-bold mb-2">Adicione 10 marmitas para ganhar
+                    5% OFF!</p>
+                <div class="w-full bg-cf-darkgray h-2 rounded-full overflow-hidden">
+                    <div id="combo-progress-bar" class="bg-cf-yellow h-full transition-all duration-300"
+                        style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div id="cart-items-list" class="space-y-4">
+                <!-- Dynamic Items -->
+                <div class="text-center py-8 text-gray-500 font-semibold italic">
+                    Seu carrinho está vazio. Adicione combustível!
+                </div>
+            </div>
+        </div>
+
+        <!-- Drawer Footer -->
+        <div class="p-4 sm:p-6 border-t border-cf-gray bg-cf-black space-y-4">
+            <div class="space-y-2 font-body text-sm font-semibold">
+                <div class="flex justify-between text-gray-400">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal-val">R$ 0,00</span>
+                </div>
+                <div id="cart-discount-row" class="flex justify-between text-green-500 hidden">
+                    <span id="cart-discount-label">Desconto (0%)</span>
+                    <span id="cart-discount-val">-R$ 0,00</span>
+                </div>
+                <div id="cart-shipping-row" class="flex justify-between text-gray-400 hidden">
+                    <span id="cart-shipping-label">Frete</span>
+                    <span id="cart-shipping-val">R$ 0,00</span>
+                </div>
+                <div
+                    class="flex justify-between text-white text-lg font-heading font-bold tracking-tight tracking-wide pt-2 border-t border-cf-gray/40">
+                    <span>TOTAL</span>
+                    <span id="cart-total-val" class="text-cf-yellow">R$ 0,00</span>
+                </div>
+            </div>
+
+            <button onclick="checkoutOrder()"
+                class="w-full bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-xl uppercase tracking-wider py-4 border-2 border-cf-yellow hover:bg-transparent hover:text-cf-yellow transition-all flex items-center justify-center gap-2"
+                style="clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 100%);">
+                Finalizar Pedido
+            </button>
+        </div>
+    </div>
+
+    <!-- Success Toast Alert -->
+    <div id="toast-success"
+        class="fixed top-4 md:top-auto md:bottom-6 left-4 md:left-auto right-4 md:right-6 bg-cf-yellow text-cf-black font-heading font-bold tracking-tight tracking-wider border-2 border-cf-black px-6 py-4 shadow-[5px_5px_0px_#fff] z-50 flex items-center justify-center md:justify-start gap-3 transform -translate-y-24 md:translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-2xl"></i>
+        <span id="toast-text">PRODUTO ADICIONADO AO CARRINHO!</span>
+    </div>
+
+    <!-- Dish Detail Modal -->
+    <div id="dish-detail-modal"
+        class="fixed inset-0 bg-black/90 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="min-h-full flex items-center justify-center py-10">
+            <div
+                class="bg-cf-darkgray border-4 border-cf-yellow w-full max-w-md relative rounded-lg shadow-[0_0_50px_rgba(246,197,0,0.3)] flex flex-col">
+                <button onclick="closeDishDetail()"
+                    class="absolute top-3 right-3 text-white bg-black/50 hover:bg-cf-yellow hover:text-black rounded-full w-8 h-8 flex items-center justify-center transition-all z-20 cursor-hover">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="w-full aspect-[2/1] bg-cf-black relative border-b-4 border-cf-yellow">
+                    <img id="dish-detail-img" src="" class="w-full h-full object-cover">
+                </div>
+                <div class="p-5 flex flex-col flex-1">
+                    <div id="dish-detail-category"
+                        class="text-cf-yellow font-bold text-xs uppercase mb-1 tracking-widest">
+                    </div>
+                    <h3 id="dish-detail-name" class="font-heading font-bold tracking-tight text-2xl text-white uppercase mb-4 leading-tight"></h3>
+                    <p class="font-body text-gray-300 text-sm font-semibold mb-6 flex-1">
+                        Refeição ultracongelada com ingredientes de verdade. Sem glúten, sem lactose e preparada para o
+                        seu
+                        melhor desempenho.
+                    </p>
+                    <div class="bg-cf-black p-3 border border-gray-700 flex flex-col gap-3 rounded">
+                        <div id="dish-detail-p" class="flex justify-between items-center w-full"></div>
+                        <div id="dish-detail-g"
+                            class="flex justify-between items-center w-full pt-3 border-t border-gray-800"></div>
+                    </div>
+
+                    <!-- Nutrition Table -->
+                    <div class="mt-4 border border-cf-gray rounded overflow-hidden flex-shrink-0">
+                        <div
+                            class="w-full bg-cf-darkgray text-white font-heading font-bold tracking-tight text-sm tracking-wider uppercase p-3 flex justify-between items-center">
+                            <span><i class="fa-solid fa-leaf text-cf-yellow mr-2"></i> Tabela Nutricional</span>
+                        </div>
+                        <div id="nutrition-content" class="bg-cf-black text-gray-300 font-body text-xs">
+                            <div class="grid grid-cols-2 gap-px bg-cf-gray">
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Valor Energético</span> <strong
+                                        id="det-energy" class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Carboidratos</span> <strong id="det-carbs"
+                                        class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Proteínas</span> <strong id="det-proteins"
+                                        class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Gorduras Totais</span> <strong
+                                        id="det-total-fat" class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Gorduras Saturadas</span> <strong
+                                        id="det-sat-fat" class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Gorduras Trans</span> <strong
+                                        id="det-trans-fat" class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Fibra Alimentar</span> <strong id="det-fiber"
+                                        class="text-white"></strong></div>
+                                <div class="bg-cf-black p-2 flex justify-between items-center"><span
+                                        class="text-[10px] text-gray-400">Sódio</span> <strong id="det-sodium"
+                                        class="text-white"></strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal"
+        class="fixed inset-0 bg-black/85 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm">
+        <div
+            class="bg-cf-darkgray border-4 border-cf-yellow p-3 sm:p-5 md:p-8 max-w-xl w-full mx-2 sm:mx-4 relative rounded-lg shadow-[0_0_50px_rgba(246,197,0,0.2)] overflow-x-hidden overflow-y-auto max-h-[90vh]">
+            <button onclick="toggleCheckoutModal()"
+                class="absolute top-4 right-4 text-gray-400 hover:text-cf-yellow hover:scale-110 transition-all text-2xl p-1 cursor-hover">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="border-b-4 border-cf-yellow pb-4 mb-6">
+                <h3 class="font-heading font-bold tracking-tight text-3xl text-white uppercase tracking-widest flex items-center gap-3">
+                    <span class="bg-cf-yellow text-cf-black px-2.5 py-1 text-xl flex items-center rounded-sm"><i
+                            class="fa-solid fa-list-check"></i></span>
+                    Finalizar Pedido
+                </h3>
+            </div>
+
+            <form id="checkout-form" novalidate onsubmit="event.preventDefault(); submitCheckoutForm();"
+                class="space-y-5 font-body text-sm font-semibold">
+                <!-- Name & Phone Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label
+                            class="block text-xs uppercase font-bold text-gray-400 mb-1.5 tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-user text-cf-yellow"></i> Nome Completo *
+                        </label>
+                        <input type="text" id="client-name" required placeholder="Ex: João Silva"
+                            class="w-full bg-cf-black text-white border-2 border-cf-gray rounded px-4 py-2.5 font-bold focus:border-cf-yellow focus:ring-2 focus:ring-cf-yellow/20 focus:outline-none transition-all placeholder:text-gray-600">
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-xs uppercase font-bold text-gray-400 mb-1.5 tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-phone text-cf-yellow"></i> Telefone / WhatsApp *
+                        </label>
+                        <input type="tel" id="client-phone" required placeholder="(11) 99999-9999" maxlength="15"
+                            class="w-full bg-cf-black text-white border-2 border-cf-gray rounded px-4 py-2.5 font-bold focus:border-cf-yellow focus:ring-2 focus:ring-cf-yellow/20 focus:outline-none transition-all placeholder:text-gray-600">
+                    </div>
+                </div>
+
+                <!-- Delivery Address -->
+                <div>
+                    <label
+                        class="block text-xs uppercase font-bold text-gray-400 mb-1.5 tracking-wider flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-cf-yellow"></i> Endereço de Entrega Completo *
+                    </label>
+                    <textarea id="client-address" required rows="2"
+                        placeholder="Ex: Rua, número, bairro e complemento — Botucatu, SP"
+                        class="w-full bg-cf-black text-white border-2 border-cf-gray rounded px-4 py-2.5 font-bold focus:border-cf-yellow focus:ring-2 focus:ring-cf-yellow/20 focus:outline-none transition-all placeholder:text-gray-600 resize-none"></textarea>
+                </div>
+
+                <!-- Delivery Date Selection (Pills / Cards) -->
+                <div>
+                    <label
+                        class="block text-xs uppercase font-bold text-gray-400 mb-2 tracking-wider flex items-center gap-1.5">
+                        <i class="fa-solid fa-calendar-day text-cf-yellow"></i> Dia da Entrega *
+                    </label>
+                    <input type="hidden" id="delivery-date" required value="">
+                    <div id="date-chips-container" class="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
+                        <!-- Date chips populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Delivery Time Selection (Pills / Grid) -->
+                <div>
+                    <label
+                        class="block text-xs uppercase font-bold text-gray-400 mb-2 tracking-wider flex items-center gap-1.5">
+                        <i class="fa-solid fa-clock text-cf-yellow"></i> Horário da Entrega (11h às 19h) *
+                    </label>
+                    <input type="hidden" id="delivery-time" required value="">
+                    <div id="time-chips-container" class="grid grid-cols-4 sm:grid-cols-6 gap-2">
+                        <!-- Time chips populated dynamically -->
+                    </div>
+                </div>
+
+                <div>
+                    <label
+                        class="block text-xs uppercase font-bold text-gray-400 mb-1.5 tracking-wider flex items-center gap-1.5">
+                        <i class="fa-solid fa-comment-pen text-cf-yellow"></i> Observações do Pedido (Opcional)
+                    </label>
+                    <textarea id="client-notes" rows="2"
+                        placeholder="Ex: Retirar cebola do strogonoff, troco para R$ 50..."
+                        class="w-full bg-cf-black text-white border-2 border-cf-gray rounded px-4 py-2.5 font-bold focus:border-cf-yellow focus:ring-2 focus:ring-cf-yellow/20 focus:outline-none transition-all placeholder:text-gray-600 resize-none"></textarea>
+                </div>
+
+                <div class="bg-cf-black p-5 border-2 border-dashed border-cf-gray rounded-sm space-y-3 mt-5 relative">
+                    <div
+                        class="absolute -top-3 left-4 bg-cf-black px-2 text-xs font-heading font-bold tracking-tight text-cf-yellow uppercase tracking-widest">
+                        Resumo do Pedido
+                    </div>
+                    <div id="checkout-items-list"
+                        class="space-y-2 text-xs text-gray-300 font-bold max-h-32 overflow-y-auto pr-1">
+                        <!-- Dynamic Items -->
+                    </div>
+                    <div class="border-t-2 border-dashed border-cf-gray/60 pt-3 space-y-1.5 text-xs font-bold">
+                        <div class="flex justify-between text-gray-400">
+                            <span>Subtotal</span>
+                            <span id="checkout-subtotal-val">R$ 0,00</span>
+                        </div>
+                        <div id="checkout-discount-row" class="flex justify-between text-green-400 hidden">
+                            <span id="checkout-discount-label">Desconto (0%)</span>
+                            <span id="checkout-discount-val">-R$ 0,00</span>
+                        </div>
+                        <div id="checkout-shipping-row" class="flex justify-between text-gray-400 hidden">
+                            <span id="checkout-shipping-label">Frete</span>
+                            <span id="checkout-shipping-val">R$ 0,00</span>
+                        </div>
+                        <div
+                            class="flex justify-between text-white font-heading font-bold tracking-tight text-base pt-2 border-t border-cf-gray/40 tracking-wider">
+                            <span>TOTAL</span>
+                            <span id="checkout-total-val" class="text-cf-yellow">R$ 0,00</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Action Buttons -->
+                <div id="checkout-buttons-container" class="flex gap-4 pt-2">
+                    <button type="button" onclick="toggleCheckoutModal()"
+                        class="w-1/2 bg-cf-gray text-white font-heading font-bold tracking-tight text-lg uppercase tracking-widest py-3 border-2 border-cf-gray hover:bg-white hover:text-cf-black hover:border-white transition-all cursor-hover rounded-sm"
+                        style="clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);">
+                        Voltar
+                    </button>
+                    <button type="submit"
+                        class="w-1/2 bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-lg uppercase tracking-widest py-3 border-2 border-cf-yellow hover:bg-transparent hover:text-cf-yellow transition-all cursor-hover flex items-center justify-center gap-1.5"
+                        style="clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);">
+                        Prosseguir <i class="fa-solid fa-arrow-right text-base"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Payment Step Container -->
+            <div id="payment-step-container" class="hidden mt-4 pt-4 border-t-2 border-dashed border-cf-gray">
+                <h3 class="font-heading font-bold tracking-tight text-2xl text-white uppercase tracking-widest text-center mb-6">Pagamento</h3>
+
+                <!-- Payment Method Selector -->
+                <div class="flex gap-3 mb-6">
+                    <button type="button" id="pmt-select-pix" onclick="selectPaymentMethod('pix')"
+                        class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-yellow bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer">
+                        <i class="fa-brands fa-pix text-lg"></i> Pix
+                    </button>
+                    <button type="button" id="pmt-select-card" onclick="selectPaymentMethod('card')"
+                        class="flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-gray bg-cf-black text-white font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer hover:border-cf-yellow">
+                        <i class="fa-solid fa-credit-card text-lg"></i> Cartão
+                    </button>
+                </div>
+
+                <!-- Pix Direct Payment (sem Brick, sem email) -->
+                <div id="pix-direct-container" class="bg-cf-black p-4 sm:p-6 rounded border-2 border-cf-gray mb-4 w-full">
+                    <div class="text-center">
+                        <i class="fa-brands fa-pix text-4xl text-green-400 mb-3"></i>
+                        <p class="text-white font-bold text-base mb-1">Pagamento via Pix</p>
+                        <p class="text-gray-400 text-xs mb-4">Ao confirmar, um QR Code será gerado para você finalizar o pagamento.</p>
+                        <div class="bg-cf-darkgray p-4 rounded border border-cf-gray mb-4">
+                            <div class="text-gray-400 text-xs uppercase font-bold tracking-wider mb-1">Total a pagar</div>
+                            <div class="text-cf-yellow font-heading font-bold tracking-tight text-3xl" id="pix-direct-total">R$ 0,00</div>
+                        </div>
+                        <button type="button" id="pix-direct-pay-btn" onclick="handleDirectPixPayment()"
+                            class="w-full bg-green-500 text-white font-heading font-bold tracking-tight text-lg uppercase tracking-widest py-3.5 rounded hover:bg-green-400 transition-all cursor-pointer flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-lock text-sm"></i> Pagar com Pix
+                        </button>
+                        <div id="pix-direct-loading" class="hidden text-center py-6">
+                            <i class="fa-solid fa-spinner fa-spin text-cf-yellow text-3xl mb-3 block"></i>
+                            <span class="text-gray-400 text-sm font-bold">Gerando QR Code...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MP Brick only for Card payments -->
+                <div id="card-brick-wrapper" class="hidden">
+                    <div class="bg-cf-black p-0 sm:p-4 rounded border-0 sm:border-2 border-cf-gray mb-4 w-full overflow-hidden">
+                        <div id="paymentBrick_container"
+                            class="bg-white rounded overflow-hidden p-0 sm:p-2 min-h-[300px] w-full"></div>
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <button type="button" onclick="goBackToCheckoutForm()"
+                        class="w-full bg-cf-gray text-white font-heading font-bold tracking-tight text-lg uppercase tracking-widest py-3 border-2 border-cf-gray hover:bg-white hover:text-cf-black hover:border-white transition-all cursor-hover rounded-sm"
+                        style="clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);">
+                        Voltar para Dados
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div id="thank-you-modal"
+        class="fixed inset-0 bg-black/90 z-50 hidden opacity-0 transition-opacity duration-300 overflow-y-auto">
+        <div class="flex min-h-full items-center justify-center py-10 px-4 sm:px-6">
+            <div
+                class="bg-cf-darkgray border-4 border-cf-yellow p-5 sm:p-8 max-w-md w-full text-center relative rounded-lg shadow-[0_0_50px_rgba(246,197,0,0.3)]">
+                <div
+                    class="w-20 h-20 bg-cf-yellow text-cf-black rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-lg border-4 border-white animate-bounce">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <h3 id="thank-you-title" class="font-heading font-bold tracking-tight text-4xl text-cf-yellow uppercase mb-2">Pedido Recebido!
+                </h3>
+                <h4 id="thank-you-subtitle" class="font-heading font-medium italic text-xl text-white mb-6">Obrigado pela preferência!</h4>
+
+                <p id="thank-you-message" class="font-body text-gray-300 font-semibold mb-6 text-sm">
+                    Seu combustível já está sendo preparado pela nossa equipe. Você pode acompanhar o status ou falar
+                    conosco a qualquer momento!
+                </p>
+
+                <div
+                    class="bg-cf-black p-4 border border-cf-gray rounded mb-6 text-left space-y-2 font-mono text-xs text-gray-400">
+                    <div><span class="text-white font-bold">CÓDIGO:</span> <span id="thank-order-id"
+                            class="text-cf-yellow font-bold">#CF-1001</span></div>
+                    <div><span class="text-white font-bold">VALOR TOTAL:</span> <span id="thank-order-total"
+                            class="text-cf-yellow font-bold">R$ 0,00</span></div>
+                    <div><span class="text-white font-bold">PAGAMENTO:</span> <span id="thank-order-payment"
+                            class="text-white">Pix</span></div>
+                    <div><span class="text-white font-bold">ENTREGA:</span> <span id="thank-order-delivery"
+                            class="text-white">—</span></div>
+                </div>
+
+                <div id="pix-payment-info"
+                    class="hidden bg-white p-4 rounded mb-6 flex flex-col items-center border-2 border-cf-yellow">
+                    <p class="font-bold text-cf-black text-sm mb-2 uppercase flex items-center gap-2"><i
+                            class="fa-brands fa-pix text-[#32bcad]"></i> Escaneie para Pagar</p>
+                    <img id="pix-qr-code" src="" alt="QR Code Pix"
+                        class="w-40 h-40 mb-3 border border-cf-gray p-1 rounded">
+                    <p class="text-xs text-gray-500 font-semibold mb-1">Ou utilize o código Copia e Cola:</p>
+                    <div class="w-full flex items-center border border-gray-300 rounded overflow-hidden">
+                        <input type="text" id="pix-copia-cola"
+                            class="flex-1 text-[10px] p-2 bg-gray-50 text-gray-700 outline-none" readonly>
+                        <button onclick="copyPixCode()"
+                            class="bg-cf-yellow text-cf-black px-3 py-2 font-bold text-xs hover:bg-cf-black hover:text-cf-yellow transition-colors"><i
+                                class="fa-solid fa-copy"></i> Copiar</button>
+                    </div>
+                </div>
+
+                <button onclick="closeThankYouModal()"
+                    class="w-full bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-lg uppercase tracking-wider py-3 border-2 border-cf-yellow hover:bg-transparent hover:text-cf-yellow transition-all rounded-sm cursor-hover">
+                    Continuar Navegando
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Supabase SDK & Central Config -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        function copyPixCode() {
+            const copyText = document.getElementById("pix-copia-cola");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Código Pix copiado!");
+        }
+
+        // Initialize Supabase Client
+        let supabaseClient = null;
+        if (window.SUPABASE_URL && window.SUPABASE_URL !== "YOUR_SUPABASE_URL" &&
+            window.SUPABASE_ANON_KEY && window.SUPABASE_ANON_KEY !== "YOUR_SUPABASE_ANON_KEY") {
+            try {
+                const { createClient } = supabase;
+                supabaseClient = createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
+                window.supabaseClient = supabaseClient;
+            } catch (err) {
+                console.error("Erro ao inicializar Supabase:", err);
+            }
+        }
+
+        // Global Cart and Menu variables
+        const defaultDishesRaw = [
+            // FRANGO
+            { id: 'price-frango-desfiado-pure-batata-doce-legumes', name: '01. Frango desfiado com purê de batata doce e legumes', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            { id: 'price-frango-desfiado-arroz-integral-legumes', name: '02. Frango desfiado com arroz integral e legumes', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            { id: 'price-frango-desfiado-pure-mandioca-legumes', name: '03. Frango desfiado com purê de mandioca e legumes', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            { id: 'price-frango-legumes', name: '04. Frango com legumes', category: 'Frango', priceP: '19,50', priceG: '—' },
+            { id: 'price-macarrao-frango-desfiado', name: '05. Macarrão com frango desfiado', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            { id: 'price-escondidinho-frango-moido-mandioca', name: '06. Escondidinho de frango moído com mandioca', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            { id: 'price-escondidinho-frango-moido-batata-doce', name: '07. Escondidinho de frango moído com batata doce', category: 'Frango', priceP: '19,50', priceG: '27,50' },
+            // GOURMET
+            { id: 'price-escondidinho-frango-mussarela-bufala', name: '08. Escondidinho de frango com mussarela de búfala', category: 'Gourmet', priceP: '27,50', priceG: '34,50' },
+            { id: 'price-nhoque-batata-doce-patinho-moido', name: '09. Nhoque de batata doce com patinho moído', category: 'Gourmet', priceP: '28,50', priceG: '35,50' },
+            { id: 'price-macarrao-patinho-moido', name: '10. Macarrão com patinho moído', category: 'Gourmet', priceP: '28,50', priceG: '35,50' },
+            { id: 'price-strogonoff-frango-arroz-branco', name: '20. Strogonoff de frango com arroz branco', category: 'Gourmet', priceP: '30,50', priceG: '38,50' },
+            { id: 'price-nhoque-batata-doce-frango-desfiado', name: '22. Nhoque de batata doce com frango desfiado', category: 'Gourmet', priceP: '22,50', priceG: '29,50' },
+            { id: 'price-penne-frango-desfiado-molho', name: '23. Penne com frango desfiado ao molho', category: 'Gourmet', priceP: '22,50', priceG: '29,50' },
+            // PATINHO
+            { id: 'price-patinho-desfiado-arroz-integral-legumes', name: '11. Patinho desfiado com arroz integral e legumes', category: 'Patinho', priceP: '25,50', priceG: '33,50' },
+            { id: 'price-patinho-desfiado-pure-batata-doce-legumes', name: '12. Patinho desfiado com purê de batata doce e legumes', category: 'Patinho', priceP: '25,50', priceG: '33,50' },
+            { id: 'price-escondidinho-mandioca-patinho-moido', name: '13. Escondidinho de mandioca com patinho moído', category: 'Patinho', priceP: '25,50', priceG: '33,50' },
+            { id: 'price-patinho-legumes', name: '14. Patinho com legumes', category: 'Patinho', priceP: '25,50', priceG: '—' },
+            { id: 'price-patinho-desfiado-pure-mandioca-legumes', name: '15. Patinho desfiado com purê de mandioca e legumes', category: 'Patinho', priceP: '25,50', priceG: '33,50' },
+            { id: 'price-patinho-moido-arroz-branco-legumes', name: '16. Patinho moído com arroz branco e legumes', category: 'Patinho', priceP: '25,50', priceG: '33,50' },
+            // SALGADOS E DOCES PROTEICOS
+            { id: 'price-coxinha-fit', name: '30. Coxinha Fit', category: 'Salgados', priceP: '8,50', priceG: '—' },
+            { id: 'price-kibes', name: '31. Kibes', category: 'Salgados', priceP: '8,50', priceG: '—' },
+            { id: 'price-nugfit', name: '32. NugFit', category: 'Salgados', priceP: '12,90', priceG: '—' },
+            { id: 'price-pizza-fit', name: '33. Pizza Fit', category: 'Salgados', priceP: '14,90', priceG: '—' },
+            { id: 'price-quiche-fit', name: '34. Quiche', category: 'Salgados', priceP: '9,90', priceG: '—' },
+            { id: 'price-sucos', name: '35. Sucos', category: 'Salgados', priceP: '10,90', priceG: '—' },
+            { id: 'price-tortas-fit', name: '36. Tortas', category: 'Salgados', priceP: '11,90', priceG: '—' }
+        ];
+
+        const defaultNutrition = {
+            energy: '202kcal',
+            carbs: '24gr',
+            proteins: '23gr',
+            totalFat: '2gr',
+            saturatedFat: '0gr',
+            transFat: '0gr',
+            fiber: '4gr',
+            sodium: '200mg'
+        };
+
+        const defaultDishes = defaultDishesRaw.map(d => ({ ...d, nutrition: { ...defaultNutrition } }));
+
+        function getDeletedDishIds() {
+            try {
+                return JSON.parse(localStorage.getItem('cleanfoods_deleted_dishes')) || [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        let rawDishes = JSON.parse(localStorage.getItem('cleanfoods_dishes_v2')) || defaultDishes;
+        let dishes = rawDishes.filter(d => !getDeletedDishIds().includes(d.id));
+        let cart = JSON.parse(localStorage.getItem('cleanfoods_cart')) || {};
+        let appliedCoupon = null;
+        let activeCategory = 'Todos';
+
+        function ensureSalgados(dishList) {
+            return dishList;
+        }
+
+        // Supabase Database helpers
+        async function loadDishes() {
+            let deletedIds = getDeletedDishIds();
+
+            if (supabaseClient) {
+                try {
+                    const { data: setSetting } = await supabaseClient.from('settings').select('*').eq('key', 'deleted_dishes').maybeSingle();
+                    if (setSetting && setSetting.value) {
+                        try {
+                            const remoteDeleted = JSON.parse(setSetting.value);
+                            if (Array.isArray(remoteDeleted)) {
+                                deletedIds = Array.from(new Set([...deletedIds, ...remoteDeleted]));
+                                localStorage.setItem('cleanfoods_deleted_dishes', JSON.stringify(deletedIds));
+                            }
+                        } catch (e) {}
+                    }
+
+                    const { data, error } = await supabaseClient.from('dishes').select('*');
+                    if (error) throw error;
+                    if (data && data.length > 0) {
+                        const localDishes = JSON.parse(localStorage.getItem('cleanfoods_dishes_v2')) || [];
+                        dishes = data.filter(d => !deletedIds.includes(d.id)).map(d => {
+                            const localD = localDishes.find(ld => ld.id === d.id);
+                            return {
+                                id: d.id,
+                                name: d.name,
+                                category: d.category,
+                                priceP: d.price_p || d.priceP || '0,00',
+                                priceG: d.price_g || d.priceG || '0,00',
+                                available: d.available !== false,
+                                image: (localD && localD.image) ? localD.image : (d.image || ''),
+                                nutrition: d.nutrition || (localD && localD.nutrition) || { ...defaultNutrition }
+                            };
+                        }).sort((a, b) => a.name.localeCompare(b.name, 'pt-BR', { numeric: true }));
+                        dishes = ensureSalgados(dishes);
+                    } else {
+                        // Seed database
+                        const dbDishes = defaultDishes.filter(d => !deletedIds.includes(d.id)).map(d => ({
+                            id: d.id,
+                            name: d.name,
+                            category: d.category,
+                            price_p: d.priceP,
+                            price_g: d.priceG,
+                            nutrition: d.nutrition
+                        }));
+                        const { error: insertError } = await supabaseClient.from('dishes').insert(dbDishes);
+                        if (insertError) throw insertError;
+                        dishes = defaultDishes.filter(d => !deletedIds.includes(d.id));
+                    }
+                } catch (err) {
+                    console.error("Erro ao carregar pratos do Supabase:", err);
+                    dishes = JSON.parse(localStorage.getItem('cleanfoods_dishes_v2')) || defaultDishes;
+                    dishes = dishes.filter(d => !deletedIds.includes(d.id));
+                    dishes = ensureSalgados(dishes);
+                }
+            } else {
+                dishes = JSON.parse(localStorage.getItem('cleanfoods_dishes_v2')) || defaultDishes;
+                dishes = dishes.filter(d => !deletedIds.includes(d.id));
+                dishes = ensureSalgados(dishes);
+            }
+        }
+
+        const DEFAULT_SHIPPING_FEE = 15.00;
+
+        function getEffectiveShippingFee() {
+            if (typeof window.systemShippingFee === 'number' && !isNaN(window.systemShippingFee) && window.systemShippingFee > 0) {
+                return window.systemShippingFee;
+            }
+            const savedFrete = localStorage.getItem('cleanfoods_frete');
+            if (savedFrete !== null && savedFrete !== undefined && savedFrete !== '') {
+                const parsed = parseFloat(savedFrete.replace(',', '.'));
+                if (!isNaN(parsed) && parsed > 0) return parsed;
+            }
+            return DEFAULT_SHIPPING_FEE;
+        }
+
+        async function loadSettings() {
+            let savedWhatsapp = localStorage.getItem('cleanfoods_whatsapp');
+            let savedAddress = localStorage.getItem('cleanfoods_address');
+            let savedFrete = localStorage.getItem('cleanfoods_frete');
+
+            if (supabaseClient) {
+                try {
+                    const { data, error } = await supabaseClient.from('settings').select('*');
+                    if (error) throw error;
+                    if (data) {
+                        const waSetting = data.find(s => s.key === 'whatsapp');
+                        if (waSetting) savedWhatsapp = waSetting.value;
+                        const addrSetting = data.find(s => s.key === 'address');
+                        if (addrSetting) savedAddress = addrSetting.value;
+                        const freteSetting = data.find(s => s.key === 'frete');
+                        if (freteSetting) savedFrete = freteSetting.value;
+                    }
+                } catch (err) {
+                    console.error("Erro ao carregar configurações do Supabase:", err);
+                }
+            }
+
+            if (savedFrete !== null && savedFrete !== undefined && savedFrete !== '') {
+                const parsed = parseFloat(savedFrete.replace(',', '.'));
+                window.systemShippingFee = !isNaN(parsed) && parsed > 0 ? parsed : DEFAULT_SHIPPING_FEE;
+            } else {
+                window.systemShippingFee = DEFAULT_SHIPPING_FEE;
+            }
+            localStorage.setItem('cleanfoods_frete', window.systemShippingFee.toFixed(2));
+
+            if (savedWhatsapp) {
+                const waFloatingBtn = document.getElementById('wa-floating-btn');
+                const waFooterBtn = document.getElementById('wa-footer-btn');
+                const waFooterLink = document.getElementById('wa-footer-link');
+
+                if (waFloatingBtn) waFloatingBtn.href = 'https://wa.me/55' + savedWhatsapp;
+                if (waFooterBtn) waFooterBtn.href = 'https://wa.me/55' + savedWhatsapp;
+                if (waFooterLink) waFooterLink.href = 'https://wa.me/55' + savedWhatsapp;
+
+                const textSpan = document.getElementById('val-whatsapp-text');
+                if (textSpan && savedWhatsapp.length >= 10) {
+                    const ddd = savedWhatsapp.substring(0, 2);
+                    const prefix = savedWhatsapp.length === 11 ? savedWhatsapp.substring(2, 7) : savedWhatsapp.substring(2, 6);
+                    const suffix = savedWhatsapp.length === 11 ? savedWhatsapp.substring(7) : savedWhatsapp.substring(6);
+                    textSpan.innerText = `(${ddd}) ${prefix}-${suffix}`;
+                }
+            }
+
+            if (savedAddress) {
+                const addressSpan = document.getElementById('val-address-text');
+                if (addressSpan) addressSpan.innerText = savedAddress;
+            }
+        }
+
+        async function loadCoupons() {
+            let activeCoupons = [];
+            if (supabaseClient) {
+                try {
+                    const { data, error } = await supabaseClient.from('coupons').select('*').eq('active', true);
+                    if (error) throw error;
+                    activeCoupons = data || [];
+                } catch (err) {
+                    console.error("Erro ao carregar cupons do Supabase:", err);
+                    const savedCoupons = JSON.parse(localStorage.getItem('cleanfoods_coupons')) || [];
+                    activeCoupons = savedCoupons.filter(c => c.active);
+                }
+            } else {
+                const savedCoupons = JSON.parse(localStorage.getItem('cleanfoods_coupons')) || [];
+                activeCoupons = savedCoupons.filter(c => c.active);
+            }
+
+            if (activeCoupons.length > 0) {
+                const daysOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+                const todayDay = daysOfWeek[new Date().getDay()];
+                const activeCoupon = activeCoupons.find(c => c.day === todayDay || c.day === 'Todo Dia');
+                if (activeCoupon) {
+                    const banner = document.getElementById('promo-coupon-banner');
+                    const discountVal = document.getElementById('coupon-discount-val');
+                    const codeVal = document.getElementById('coupon-code-val');
+                    if (banner && discountVal && codeVal) {
+                        discountVal.innerText = activeCoupon.discount;
+                        codeVal.innerText = activeCoupon.code;
+                        banner.classList.remove('hidden');
+                    }
+                    const couponInput = document.getElementById('cart-coupon-input');
+                    if (couponInput) {
+                        couponInput.value = activeCoupon.code;
+                        applyCartCoupon();
+                    }
+                }
+            }
+        }
+
+        // Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        const hoverables = document.querySelectorAll('.cursor-hover, a, button');
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            window.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { duration: 500, fill: "forwards" });
+            });
+
+            hoverables.forEach(elem => {
+                elem.addEventListener('mouseenter', () => {
+                    document.body.classList.add('cursor-hover');
+                });
+                elem.addEventListener('mouseleave', () => {
+                    document.body.classList.remove('cursor-hover');
+                });
+            });
+        }
+
+        // Cart toggle
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            if (drawer) {
+                const isOpen = drawer.classList.toggle('open');
+                if (isOpen) {
+                    document.body.classList.add('cart-open-overflow');
+                    sessionStorage.setItem('cleanfoods_ui_cart_open', 'true');
+                } else {
+                    document.body.classList.remove('cart-open-overflow');
+                    sessionStorage.setItem('cleanfoods_ui_cart_open', 'false');
+                }
+            }
+        }
+
+        // Success toast notification
+        function showToast(text) {
+            const toast = document.getElementById('toast-success');
+            const toastText = document.getElementById('toast-text');
+            if (!toast || !toastText) return;
+
+            toastText.innerText = text;
+            toast.classList.remove('-translate-y-24', 'md:translate-y-24', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('-translate-y-24', 'md:translate-y-24', 'opacity-0');
+            }, 3000);
+        }
+
+        // Add to Cart
+        function addToCart(dishId, size) {
+            const dish = dishes.find(d => d.id === dishId);
+            if (!dish) {
+                console.error("Prato não encontrado:", dishId);
+                return;
+            }
+
+            const priceStr = size === 'P' ? dish.priceP : dish.priceG;
+            if (!priceStr || priceStr === '—' || priceStr === '') {
+                showToast("ESTE TAMANHO NÃO ESTÁ DISPONÍVEL!");
+                return;
+            }
+            const price = parseFloat(priceStr.replace(',', '.'));
+            if (isNaN(price) || price <= 0) {
+                showToast("PREÇO INVÁLIDO PARA ESTE ITEM!");
+                return;
+            }
+
+            const key = `${dishId}-${size}`;
+
+            if (cart[key]) {
+                cart[key].quantity += 1;
+            } else {
+                cart[key] = {
+                    dishId: dishId,
+                    name: dish.name,
+                    size: size,
+                    price: price,
+                    quantity: 1,
+                    category: dish.category
+                };
+            }
+
+            localStorage.setItem('cleanfoods_cart', JSON.stringify(cart));
+            updateCartBadges();
+            renderCart();
+
+            // Animate floating cart button to draw attention
+            const floatingCart = document.getElementById('floating-cart');
+            if (floatingCart) {
+                floatingCart.classList.add('animate-bounce');
+                setTimeout(() => {
+                    floatingCart.classList.remove('animate-bounce');
+                }, 1000);
+            }
+
+            showToast("PRODUTO ADICIONADO AO CARRINHO!");
+        }
+
+        // Update Cart Badges count
+        function updateCartBadges() {
+            let totalItems = 0;
+            for (const key in cart) {
+                totalItems += cart[key].quantity;
+            }
+
+            const badgeHeader = document.getElementById('cart-badge-header');
+            const badgeFloat = document.getElementById('cart-badge-float');
+
+            if (badgeHeader) {
+                if (totalItems > 0) {
+                    badgeHeader.innerText = totalItems;
+                    badgeHeader.classList.remove('hidden');
+                } else {
+                    badgeHeader.classList.add('hidden');
+                }
+            }
+
+            if (badgeFloat) {
+                if (totalItems > 0) {
+                    badgeFloat.innerText = totalItems;
+                    badgeFloat.classList.remove('hidden');
+                } else {
+                    badgeFloat.classList.add('hidden');
+                }
+            }
+        }
+
+        // Update Item Quantity inside the cart
+        function updateQuantity(key, delta) {
+            if (!cart[key]) return;
+
+            cart[key].quantity += delta;
+            if (cart[key].quantity <= 0) {
+                delete cart[key];
+            }
+
+            localStorage.setItem('cleanfoods_cart', JSON.stringify(cart));
+            updateCartBadges();
+            renderCart();
+        }
+
+        // Remove item from cart
+        function removeFromCart(key) {
+            if (cart[key]) {
+                delete cart[key];
+                localStorage.setItem('cleanfoods_cart', JSON.stringify(cart));
+                updateCartBadges();
+                renderCart();
+                showToast("ITEM REMOVIDO!");
+            }
+        }
+
+        // Validate and apply custom coupon codes
+        async function applyCartCoupon() {
+            const input = document.getElementById('cart-coupon-input');
+            const feedback = document.getElementById('coupon-feedback');
+            if (!input || !feedback) return;
+
+            const code = input.value.trim().toUpperCase();
+            if (!code) {
+                feedback.innerText = "Informe o código do cupom!";
+                feedback.className = "text-xs font-bold mt-2 text-red-500";
+                feedback.classList.remove('hidden');
+                appliedCoupon = null;
+                renderCart();
+                return;
+            }
+
+            let coupon = null;
+            const daysOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+            const todayDay = daysOfWeek[new Date().getDay()];
+
+            if (supabaseClient) {
+                try {
+                    const { data, error } = await supabaseClient.from('coupons').select('*').eq('code', code);
+                    if (error) throw error;
+                    if (data && data.length > 0) {
+                        coupon = data[0];
+                    }
+                } catch (err) {
+                    console.error("Erro ao verificar cupom no Supabase:", err);
+                }
+            }
+
+            if (!coupon) {
+                const savedCoupons = JSON.parse(localStorage.getItem('cleanfoods_coupons')) || [];
+                coupon = savedCoupons.find(c => c.code === code);
+            }
+
+            if (!coupon) {
+                feedback.innerText = "Cupom inexistente!";
+                feedback.className = "text-xs font-bold mt-2 text-red-500";
+                feedback.classList.remove('hidden');
+                appliedCoupon = null;
+                renderCart();
+                return;
+            }
+
+            if (!coupon.active) {
+                feedback.innerText = "Este cupom está desativado!";
+                feedback.className = "text-xs font-bold mt-2 text-red-500";
+                feedback.classList.remove('hidden');
+                appliedCoupon = null;
+                renderCart();
+                return;
+            }
+
+            if (coupon.day !== 'Todo Dia' && coupon.day !== todayDay) {
+                feedback.innerText = `Este cupom só é válido de ${coupon.day}!`;
+                feedback.className = "text-xs font-bold mt-2 text-red-500";
+                feedback.classList.remove('hidden');
+                appliedCoupon = null;
+                renderCart();
+                return;
+            }
+
+            // Success
+            appliedCoupon = coupon;
+            feedback.innerText = `Cupom aplicado! Desconto de ${coupon.discount}%`;
+            feedback.className = "text-xs font-bold mt-2 text-green-500";
+            feedback.classList.remove('hidden');
+            renderCart();
+        }
+
+        // Render products list inside the drawer
+        function renderCart() {
+            const listContainer = document.getElementById('cart-items-list');
+            if (!listContainer) return;
+
+            listContainer.innerHTML = '';
+
+            let subtotal = 0;
+            let hasItems = false;
+            let totalMarmitas = 0; // Combo logic
+
+            for (const key in cart) {
+                hasItems = true;
+                const item = cart[key];
+                totalMarmitas += item.quantity;
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+
+                const itemRow = document.createElement('div');
+                itemRow.className = 'bg-cf-black p-4 border border-cf-gray rounded flex items-center justify-between gap-3';
+                itemRow.innerHTML = `
+                    <div class="flex-1">
+                        <div class="text-sm font-bold text-white uppercase">${item.name}</div>
+                        <div class="text-xs text-gray-400 font-semibold mt-1">Tamanho: <span class="text-cf-yellow">${item.size}</span> | Unitário: R$ ${item.price.toFixed(2).replace('.', ',')}</div>
+                        <div class="text-sm font-heading font-bold tracking-tight text-cf-yellow mt-1">Total: R$ ${itemTotal.toFixed(2).replace('.', ',')}</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center bg-cf-darkgray border border-cf-gray rounded overflow-hidden">
+                            <button onclick="updateQuantity('${key}', -1)" class="px-2.5 py-1 text-gray-400 hover:text-white hover:bg-cf-gray transition-colors text-xs font-bold">-</button>
+                            <span class="px-3 py-1 text-sm font-bold text-white select-none">${item.quantity}</span>
+                            <button onclick="updateQuantity('${key}', 1)" class="px-2.5 py-1 text-gray-400 hover:text-white hover:bg-cf-gray transition-colors text-xs font-bold">+</button>
+                        </div>
+                        <button onclick="removeFromCart('${key}')" class="text-red-500 hover:text-red-400 p-1 transition-colors text-sm cursor-hover">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                `;
+                listContainer.appendChild(itemRow);
+            }
+
+            if (!hasItems) {
+                listContainer.innerHTML = `
+                    <div class="text-center py-8 text-gray-500 font-semibold italic">
+                        Seu carrinho está vazio. Adicione combustível!
+                    </div>
+                `;
+            }
+
+            const subtotalSpan = document.getElementById('cart-subtotal-val');
+            const discountRow = document.getElementById('cart-discount-row');
+            const discountLabel = document.getElementById('cart-discount-label');
+            const discountSpan = document.getElementById('cart-discount-val');
+            const totalSpan = document.getElementById('cart-total-val');
+
+            // Combo Progress Logic
+            const progressContainer = document.getElementById('combo-progress-container');
+            const progressText = document.getElementById('combo-progress-text');
+            const progressBar = document.getElementById('combo-progress-bar');
+
+            const trackerBanner = document.getElementById('combo-tracker-banner');
+            const trackerText = document.getElementById('combo-tracker-text');
+            const trackerBar = document.getElementById('combo-tracker-bar');
+
+            let comboDiscountPercent = 0;
+            let progress = 0;
+
+            let chosenGoal = parseInt(localStorage.getItem('cleanfoods_combo_goal')) || 10;
+
+            // Still calculate the real discount based on total items
+            if (totalMarmitas >= 30) {
+                comboDiscountPercent = 20;
+            } else if (totalMarmitas >= 20) {
+                comboDiscountPercent = 10;
+            } else if (totalMarmitas >= 10) {
+                comboDiscountPercent = 5;
+            }
+
+            // UI Progress based on Chosen Goal
+            let nextGoal = chosenGoal;
+            let nextBenefit = "5% OFF";
+            if (chosenGoal === 20) nextBenefit = "10% OFF + Salgado";
+            if (chosenGoal === 30) nextBenefit = "20% OFF + Frete Grátis";
+
+            let htmlText = "";
+            if (totalMarmitas >= chosenGoal) {
+                // Goal reached
+                htmlText = `🔥 <span class="text-cf-yellow">BÔNUS DESBLOQUEADO:</span> ${nextBenefit} garantido no carrinho!`;
+                progress = 100;
+            } else {
+                htmlText = `Faltam só <span class="text-cf-yellow text-sm md:text-lg mx-1 drop-shadow-[0_0_10px_rgba(246,197,0,0.6)]">${chosenGoal - totalMarmitas}</span> marmitas para liberar <span class="text-cf-yellow border-b border-cf-yellow pb-[1px]">${nextBenefit}</span>!`;
+                progress = (totalMarmitas / chosenGoal) * 100;
+            }
+
+            if (progressText) progressText.innerHTML = htmlText;
+            if (trackerText) trackerText.innerHTML = htmlText;
+
+            const isPromoActive = sessionStorage.getItem('cleanfoods_promo_active') === 'true';
+
+            if (progressContainer) {
+                if (isPromoActive) {
+                    progressContainer.classList.remove('hidden');
+                    progressBar.style.width = `${progress}%`;
+                    if (!hasItems) progressContainer.classList.add('hidden'); // Hide if empty
+                } else {
+                    progressContainer.classList.add('hidden');
+                }
+            }
+
+            if (trackerBanner) {
+                if (localStorage.getItem('cleanfoods_combo_goal') && isPromoActive) {
+                    trackerBanner.classList.remove('hidden');
+                    trackerBar.style.width = `${progress}%`;
+                } else {
+                    trackerBanner.classList.add('hidden');
+                }
+            }
+
+            let discountAmount = 0;
+            let discountLabelText = '';
+            let couponDiscountPercent = appliedCoupon ? appliedCoupon.discount : 0;
+
+            if (comboDiscountPercent > 0 || couponDiscountPercent > 0) {
+                if (comboDiscountPercent >= couponDiscountPercent) {
+                    discountAmount = subtotal * (comboDiscountPercent / 100);
+                    discountLabelText = `Combo Monstro (${comboDiscountPercent}%)`;
+                } else {
+                    discountAmount = subtotal * (couponDiscountPercent / 100);
+                    discountLabelText = `Cupom (${couponDiscountPercent}%)`;
+                }
+
+                if (discountRow) discountRow.classList.remove('hidden');
+                if (discountLabel) discountLabel.innerText = discountLabelText;
+                if (discountSpan) discountSpan.innerText = `-R$ ${discountAmount.toFixed(2).replace('.', ',')}`;
+            } else {
+                if (discountRow) discountRow.classList.add('hidden');
+            }
+
+            let shippingFee = getEffectiveShippingFee();
+            if (totalMarmitas >= 30) shippingFee = 0; // Combo monstro gives frete grátis
+
+            const shippingRow = document.getElementById('cart-shipping-row');
+            const shippingSpan = document.getElementById('cart-shipping-val');
+            if (shippingRow && shippingSpan) {
+                shippingRow.classList.remove('hidden');
+                if (shippingFee > 0) {
+                    shippingSpan.innerText = `R$ ${shippingFee.toFixed(2).replace('.', ',')}`;
+                } else {
+                    shippingSpan.innerText = `GRÁTIS (Combo 30)`;
+                }
+            }
+
+            const finalTotal = Math.max(0, subtotal - discountAmount + shippingFee);
+
+            if (subtotalSpan) subtotalSpan.innerText = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            if (totalSpan) totalSpan.innerText = `R$ ${finalTotal.toFixed(2).replace('.', ',')}`;
+
+            // Checkout Summary Update
+            const checkoutList = document.getElementById('checkout-items-list');
+            if (checkoutList) {
+                checkoutList.innerHTML = '';
+                for (const key in cart) {
+                    const item = cart[key];
+                    const itemRow = document.createElement('div');
+                    itemRow.className = 'flex justify-between';
+                    itemRow.innerHTML = `
+                        <span>${item.quantity}x ${item.name} (${item.size})</span>
+                        <span>R$ ${(item.price * item.quantity).toFixed(2).replace('.', ',')}</span>
+                    `;
+                    checkoutList.appendChild(itemRow);
+                }
+            }
+
+            const chkSubtotalSpan = document.getElementById('checkout-subtotal-val');
+            const chkDiscountRow = document.getElementById('checkout-discount-row');
+            const chkDiscountLabel = document.getElementById('checkout-discount-label');
+            const chkDiscountSpan = document.getElementById('checkout-discount-val');
+            const chkShippingRow = document.getElementById('checkout-shipping-row');
+            const chkShippingSpan = document.getElementById('checkout-shipping-val');
+            const chkTotalSpan = document.getElementById('checkout-total-val');
+
+            if (comboDiscountPercent > 0 || couponDiscountPercent > 0) {
+                if (chkDiscountRow) chkDiscountRow.classList.remove('hidden');
+                if (chkDiscountLabel) chkDiscountLabel.innerText = discountLabelText;
+                if (chkDiscountSpan) chkDiscountSpan.innerText = `-R$ ${discountAmount.toFixed(2).replace('.', ',')}`;
+            } else {
+                if (chkDiscountRow) chkDiscountRow.classList.add('hidden');
+            }
+
+            if (chkShippingRow && chkShippingSpan) {
+                chkShippingRow.classList.remove('hidden');
+                if (shippingFee > 0) {
+                    chkShippingSpan.innerText = `R$ ${shippingFee.toFixed(2).replace('.', ',')}`;
+                } else {
+                    chkShippingSpan.innerText = `GRÁTIS (Combo 30)`;
+                }
+            }
+
+            if (chkSubtotalSpan) chkSubtotalSpan.innerText = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+            if (chkTotalSpan) chkTotalSpan.innerText = `R$ ${finalTotal.toFixed(2).replace('.', ',')}`;
+        }
+
+        // Toggle Checkout Modal
+        function toggleCheckoutModal() {
+            const modal = document.getElementById('checkout-modal');
+            if (!modal) return;
+
+            if (modal.classList.contains('hidden')) {
+                // Pre-fill inputs from localStorage if saved
+                const savedName = localStorage.getItem('cleanfoods_client_name') || '';
+                const savedPhone = localStorage.getItem('cleanfoods_client_phone') || '';
+                const savedAddress = localStorage.getItem('cleanfoods_client_address') || '';
+                const savedNotes = localStorage.getItem('cleanfoods_client_notes') || '';
+                const savedDate = localStorage.getItem('cleanfoods_client_delivery_date') || '';
+                const savedTime = localStorage.getItem('cleanfoods_client_delivery_time') || '';
+
+                const nameInput = document.getElementById('client-name');
+                const phoneInput = document.getElementById('client-phone');
+                const addressTextarea = document.getElementById('client-address');
+                const notesTextarea = document.getElementById('client-notes');
+                const dateInput = document.getElementById('delivery-date');
+                const timeInput = document.getElementById('delivery-time');
+
+                if (nameInput && savedName) nameInput.value = savedName;
+                if (phoneInput && savedPhone) phoneInput.value = savedPhone;
+                if (addressTextarea && savedAddress) addressTextarea.value = savedAddress;
+                if (notesTextarea && savedNotes) notesTextarea.value = savedNotes;
+
+                if (timeInput && savedTime) timeInput.value = savedTime;
+
+                renderDateChips();
+                renderTimeChips();
+
+                sessionStorage.setItem('cleanfoods_ui_checkout_open', 'true');
+
+                document.getElementById('checkout-form').classList.remove('hidden');
+                const paymentStep = document.getElementById('payment-step-container');
+                if (paymentStep) paymentStep.classList.add('hidden');
+
+                modal.classList.remove('hidden');
+                document.body.classList.add('cart-open-overflow');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                }, 10);
+            } else {
+                sessionStorage.setItem('cleanfoods_ui_checkout_open', 'false');
+                modal.classList.add('opacity-0');
+                document.body.classList.remove('cart-open-overflow');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        const AVAILABLE_DELIVERY_TIME_SLOTS = [
+            '11:00', '11:30', '12:00', '12:30', '13:00', '13:30',
+            '14:00', '14:30', '15:00', '15:30', '16:00', '16:30',
+            '17:00', '17:30', '18:00', '18:30', '19:00'
+        ];
+
+        function renderDateChips() {
+            const container = document.getElementById('date-chips-container');
+            const hiddenInput = document.getElementById('delivery-date');
+            if (!container || !hiddenInput) return;
+
+            container.innerHTML = '';
+            const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+            const savedDate = localStorage.getItem('cleanfoods_client_delivery_date');
+            const today = new Date();
+
+            let selectedIsoDate = savedDate || '';
+
+            for (let i = 0; i <= 7; i++) {
+                const d = new Date(today);
+                d.setDate(today.getDate() + i);
+
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const isoDate = `${year}-${month}-${day}`;
+
+                if (i === 0 && !selectedIsoDate) {
+                    selectedIsoDate = isoDate;
+                }
+
+                const dayLabel = i === 0 ? 'Hoje' : (i === 1 ? 'Amanhã' : daysOfWeek[d.getDay()]);
+
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `px-3.5 py-2.5 rounded border text-xs font-bold transition-all whitespace-nowrap cursor-pointer flex flex-col items-center justify-center min-w-[75px] select-none ${selectedIsoDate === isoDate
+                        ? 'bg-cf-yellow text-cf-black border-cf-yellow shadow-[0_0_12px_rgba(246,197,0,0.4)] scale-105 font-heading font-bold tracking-tight text-sm'
+                        : 'bg-cf-black text-gray-300 border-cf-gray hover:border-cf-yellow hover:text-white'
+                    }`;
+                btn.innerHTML = `
+                    <span class="uppercase tracking-wider text-[10px] opacity-80">${dayLabel}</span>
+                    <span class="font-heading font-bold tracking-tight text-sm">${day}/${month}</span>
+                `;
+
+                btn.onclick = () => {
+                    hiddenInput.value = isoDate;
+                    localStorage.setItem('cleanfoods_client_delivery_date', isoDate);
+                    renderDateChips();
+                    renderTimeChips();
+                };
+
+                container.appendChild(btn);
+            }
+
+            hiddenInput.value = selectedIsoDate;
+            localStorage.setItem('cleanfoods_client_delivery_date', selectedIsoDate);
+        }
+
+        function renderTimeChips() {
+            const container = document.getElementById('time-chips-container');
+            const hiddenInput = document.getElementById('delivery-time');
+            if (!container || !hiddenInput) return;
+
+            container.innerHTML = '';
+            const savedTime = localStorage.getItem('cleanfoods_client_delivery_time') || '';
+            let selectedTime = savedTime;
+
+            const selectedDate = localStorage.getItem('cleanfoods_client_delivery_date') || '';
+            
+            // Horário de Brasília
+            const bsbTime = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
+            const currentHour = bsbTime.getHours();
+            const currentMinute = bsbTime.getMinutes();
+            
+            const bsbYear = bsbTime.getFullYear();
+            const bsbMonth = String(bsbTime.getMonth() + 1).padStart(2, '0');
+            const bsbDay = String(bsbTime.getDate()).padStart(2, '0');
+            const bsbDateStr = `${bsbYear}-${bsbMonth}-${bsbDay}`;
+            
+            const isToday = (selectedDate === bsbDateStr) || (selectedDate === '');
+
+            let availableSlots = AVAILABLE_DELIVERY_TIME_SLOTS;
+
+            if (isToday) {
+                availableSlots = AVAILABLE_DELIVERY_TIME_SLOTS.filter(slot => {
+                    const [slotHourStr, slotMinuteStr] = slot.split(':');
+                    const slotHour = parseInt(slotHourStr, 10);
+                    const slotMinute = parseInt(slotMinuteStr, 10);
+                    if (slotHour > currentHour) return true;
+                    if (slotHour === currentHour && slotMinute > currentMinute) return true;
+                    return false;
+                });
+            }
+
+            if (availableSlots.length === 0) {
+                container.innerHTML = '<span class="text-xs text-gray-500 font-bold block w-full text-center py-2">Nenhum horário disponível para hoje.</span>';
+                if (selectedTime !== '') {
+                    hiddenInput.value = '';
+                    localStorage.removeItem('cleanfoods_client_delivery_time');
+                }
+                return;
+            }
+
+            if (selectedTime && !availableSlots.includes(selectedTime)) {
+                selectedTime = '';
+                hiddenInput.value = '';
+                localStorage.removeItem('cleanfoods_client_delivery_time');
+            }
+
+            availableSlots.forEach((slot) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `py-2 px-2 rounded border text-xs font-heading font-bold tracking-tight tracking-wider transition-all cursor-pointer text-center select-none ${selectedTime === slot
+                        ? 'bg-cf-yellow text-cf-black border-cf-yellow shadow-[0_0_10px_rgba(246,197,0,0.4)] scale-105'
+                        : 'bg-cf-black text-white border-cf-gray hover:border-cf-yellow hover:text-cf-yellow'
+                    }`;
+                btn.innerText = slot;
+
+                btn.onclick = () => {
+                    hiddenInput.value = slot;
+                    localStorage.setItem('cleanfoods_client_delivery_time', slot);
+                    renderTimeChips();
+                };
+
+                container.appendChild(btn);
+            });
+
+            hiddenInput.value = selectedTime;
+        }
+
+        // Setup live auto-saving and restoration for client checkout form fields & modals
+        function initCheckoutFormStatePersistence() {
+            renderDateChips();
+            renderTimeChips();
+
+            // Máscara de Telefone Automática (11) 99999-9999
+            const phoneInput = document.getElementById('client-phone');
+            if (phoneInput) {
+                const formatPhone = (val) => {
+                    let v = val.replace(/\D/g, '');
+                    if (v.length > 11) v = v.slice(0, 11);
+                    if (v.length > 6) return `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+                    if (v.length > 2) return `(${v.slice(0, 2)}) ${v.slice(2)}`;
+                    if (v.length > 0) return `(${v}`;
+                    return '';
+                };
+
+                if (phoneInput.value) {
+                    phoneInput.value = formatPhone(phoneInput.value);
+                }
+
+                phoneInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace') {
+                        const pos = e.target.selectionStart;
+                        const val = e.target.value;
+                        // Se o cursor está logo após um separador, pula o separador
+                        if (pos > 0 && /[\s\-\(\)]/.test(val[pos - 1])) {
+                            e.preventDefault();
+                            const newVal = val.slice(0, pos - 2) + val.slice(pos);
+                            e.target.value = formatPhone(newVal);
+                            // Reposiciona o cursor
+                            const newPos = pos - 2;
+                            e.target.setSelectionRange(newPos < 0 ? 0 : newPos, newPos < 0 ? 0 : newPos);
+                        }
+                    }
+                });
+
+                phoneInput.addEventListener('input', (e) => {
+                    const pos = e.target.selectionStart;
+                    const oldLen = e.target.value.length;
+                    e.target.value = formatPhone(e.target.value);
+                    const newLen = e.target.value.length;
+                    const newPos = pos + (newLen - oldLen);
+                    e.target.setSelectionRange(newPos, newPos);
+                });
+            }
+
+            const fields = [
+                { id: 'client-name', key: 'cleanfoods_client_name' },
+                { id: 'client-phone', key: 'cleanfoods_client_phone' },
+                { id: 'client-address', key: 'cleanfoods_client_address' },
+                { id: 'client-notes', key: 'cleanfoods_client_notes' },
+                { id: 'delivery-date', key: 'cleanfoods_client_delivery_date' },
+                { id: 'delivery-time', key: 'cleanfoods_client_delivery_time' }
+            ];
+
+            fields.forEach(f => {
+                const el = document.getElementById(f.id);
+                if (el) {
+                    const savedVal = localStorage.getItem(f.key);
+                    if (savedVal && !el.value) {
+                        el.value = savedVal;
+                    }
+                    el.addEventListener('input', () => localStorage.setItem(f.key, el.value));
+                    el.addEventListener('change', () => localStorage.setItem(f.key, el.value));
+                }
+            });
+
+            // Save and restore scroll position
+            let scrollTimer;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimer);
+                scrollTimer = setTimeout(() => {
+                    sessionStorage.setItem('cleanfoods_client_scroll_y', window.scrollY.toString());
+                }, 100);
+            });
+
+            const savedScroll = sessionStorage.getItem('cleanfoods_client_scroll_y');
+            if (savedScroll && parseFloat(savedScroll) > 0) {
+                window.scrollTo({ top: parseFloat(savedScroll), behavior: 'instant' });
+            }
+
+            // Restore Checkout Modal or Cart Drawer if open prior to refresh
+            const isCheckoutOpen = sessionStorage.getItem('cleanfoods_ui_checkout_open');
+            if (isCheckoutOpen === 'true') {
+                const modal = document.getElementById('checkout-modal');
+                if (modal && modal.classList.contains('hidden')) {
+                    toggleCheckoutModal();
+                }
+            } else {
+                const isCartOpen = sessionStorage.getItem('cleanfoods_ui_cart_open');
+                if (isCartOpen === 'true') {
+                    const cartDrawer = document.getElementById('cart-drawer');
+                    if (cartDrawer && !cartDrawer.classList.contains('open')) {
+                        toggleCart();
+                    }
+                }
+            }
+        }
+
+        // Close Thank You Modal
+        function closeThankYouModal() {
+            const thankModal = document.getElementById('thank-you-modal');
+            if (thankModal) {
+                thankModal.classList.add('opacity-0');
+                setTimeout(() => {
+                    thankModal.classList.add('hidden');
+                }, 300);
+            }
+            document.body.classList.remove('cart-open-overflow');
+        }
+
+        // Validate checkout modal fields and submit order locally
+        let isSubmitting = false;
+        async function submitCheckoutForm() {
+            if (isSubmitting) return;
+            const nameInput = document.getElementById('client-name');
+            const phoneInput = document.getElementById('client-phone');
+            const addressInput = document.getElementById('client-address');
+
+            const notesInput = document.getElementById('client-notes');
+            const dateInput = document.getElementById('delivery-date');
+            const timeInput = document.getElementById('delivery-time');
+
+            const name = nameInput ? nameInput.value.trim() : '';
+            const phone = phoneInput ? phoneInput.value.trim() : '';
+            const address = addressInput ? addressInput.value.trim() : '';
+            let payment = 'Aguardando';
+            const notes = notesInput ? notesInput.value.trim() : '';
+            const deliveryDate = dateInput ? dateInput.value : '';
+            const deliveryTime = timeInput ? timeInput.value : '';
+
+            if (!name) {
+                alert("Por favor, preencha o campo Nome Completo.");
+                if (nameInput) nameInput.focus();
+                return;
+            }
+            if (!phone) {
+                alert("Por favor, preencha o campo Telefone.");
+                if (phoneInput) phoneInput.focus();
+                return;
+            }
+            if (!address) {
+                alert("Por favor, preencha o campo Endereço de Entrega.");
+                if (addressInput) addressInput.focus();
+                return;
+            }
+            if (!payment) {
+                alert("Por favor, escolha uma Forma de Pagamento.");
+                if (paymentInput) paymentInput.focus();
+                return;
+            }
+            if (!deliveryDate) {
+                alert("Por favor, selecione a Data da Entrega.");
+                if (dateInput) dateInput.focus();
+                return;
+            }
+            if (!deliveryTime) {
+                alert("Por favor, informe o Horário da Entrega.");
+                if (timeInput) timeInput.focus();
+                return;
+            }
+
+            // Validar formato do telefone (mínimo 10 dígitos)
+            const phoneDigits = phone.replace(/\D/g, '');
+            if (phoneDigits.length < 10 || phoneDigits.length > 11) {
+                alert("Informe um telefone válido com DDD (ex: 11999998888)");
+                if (phoneInput) phoneInput.focus();
+                return;
+            }
+
+            // Validar horário (11:00 às 19:00)
+            const [hours, minutes] = deliveryTime.split(':').map(Number);
+            if (hours < 11 || (hours === 19 && minutes > 0) || hours > 19) {
+                alert("O horário de entrega deve ser entre 11h e 19h.");
+                if (timeInput) timeInput.focus();
+                return;
+            }
+
+            // Validar data da entrega (de hoje até hoje + 7 dias)
+            const selectedDate = new Date(deliveryDate + 'T00:00:00');
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            const maxDate = new Date(today);
+            maxDate.setDate(today.getDate() + 7);
+
+            if (selectedDate < today || selectedDate > maxDate) {
+                alert("A data de entrega deve ser a partir de hoje e no máximo nos próximos 7 dias.");
+                if (dateInput) dateInput.focus();
+                return;
+            }
+
+            isSubmitting = true;
+
+            localStorage.setItem('cleanfoods_client_name', name);
+            localStorage.setItem('cleanfoods_client_phone', phone);
+            localStorage.setItem('cleanfoods_client_address', address);
+
+            let subtotal = 0;
+            let totalMarmitas = 0;
+            const orderItems = [];
+            for (const key in cart) {
+                const item = cart[key];
+                const itemTotal = item.price * item.quantity;
+                subtotal += itemTotal;
+                totalMarmitas += item.quantity;
+                orderItems.push({
+                    name: item.name,
+                    size: item.size,
+                    price: item.price,
+                    quantity: item.quantity
+                });
+            }
+
+            let comboDiscountPercent = 0;
+            let comboBonus = '';
+            if (totalMarmitas >= 30) {
+                comboDiscountPercent = 20;
+                comboBonus = 'Frete Grátis';
+            } else if (totalMarmitas >= 20) {
+                comboDiscountPercent = 10;
+                comboBonus = '1 Salgado Cortesia';
+            } else if (totalMarmitas >= 10) {
+                comboDiscountPercent = 5;
+            }
+
+            if (comboBonus) {
+                orderItems.push({
+                    name: `🎁 BRINDE: ${comboBonus}`,
+                    size: 'Único',
+                    price: 0,
+                    quantity: 1
+                });
+            }
+
+            // Revalidar cupom antes de aplicar
+            if (appliedCoupon) {
+                const daysOfWeek = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+                const todayDay = daysOfWeek[new Date().getDay()];
+                if (!appliedCoupon.active || (appliedCoupon.day !== 'Todo Dia' && appliedCoupon.day !== todayDay)) {
+                    appliedCoupon = null;
+                }
+            }
+
+            let couponDiscountPercent = appliedCoupon ? appliedCoupon.discount : 0;
+            let discountAmount = 0;
+
+            if (comboDiscountPercent >= couponDiscountPercent) {
+                discountAmount = subtotal * (comboDiscountPercent / 100);
+            } else {
+                discountAmount = subtotal * (couponDiscountPercent / 100);
+            }
+
+            let shippingFee = getEffectiveShippingFee();
+            if (totalMarmitas >= 30) {
+                shippingFee = 0;
+            }
+
+            const finalTotal = Math.max(0, subtotal - discountAmount + shippingFee);
+
+            if (shippingFee > 0) {
+                orderItems.push({
+                    name: `🚚 Taxa de Entrega (Frete)`,
+                    size: 'Único',
+                    price: shippingFee,
+                    quantity: 1
+                });
+            }
+
+            const orderId = 'CF-' + Date.now().toString(36).slice(-5).toUpperCase() + Math.random().toString(36).substring(2, 5).toUpperCase();
+
+            const order = {
+                id: orderId,
+                clientName: name,
+                clientPhone: phone,
+                address: address,
+                payment: payment,
+                notes: notes,
+                deliveryDate: deliveryDate,
+                deliveryTime: deliveryTime,
+                items: orderItems,
+                subtotal: subtotal.toFixed(2),
+                discount: discountAmount.toFixed(2),
+                total: finalTotal.toFixed(2),
+                status: 'Pendente',
+                date: new Date().toISOString()
+            };
+
+            // ------------------ NEW FLOW ------------------
+            window.currentOrderData = order;
+
+            // Esconde form e mostra o Mercado Pago
+            document.getElementById('checkout-form').classList.add('hidden');
+            const paymentStep = document.getElementById('payment-step-container');
+            if (paymentStep) paymentStep.classList.remove('hidden');
+
+            // Set Pix total display
+            const pixTotal = document.getElementById('pix-direct-total');
+            if (pixTotal) pixTotal.innerText = `R$ ${parseFloat(order.total).toFixed(2).replace('.', ',')}`;
+
+            // Default to Pix selected
+            selectPaymentMethod('pix');
+
+            isSubmitting = false;
+        }
+
+        function selectPaymentMethod(method) {
+            const pixContainer = document.getElementById('pix-direct-container');
+            const cardWrapper = document.getElementById('card-brick-wrapper');
+            const btnPix = document.getElementById('pmt-select-pix');
+            const btnCard = document.getElementById('pmt-select-card');
+
+            if (method === 'pix') {
+                pixContainer.classList.remove('hidden');
+                cardWrapper.classList.add('hidden');
+                btnPix.className = 'flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-yellow bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer';
+                btnCard.className = 'flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-gray bg-cf-black text-white font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer hover:border-cf-yellow';
+            } else {
+                pixContainer.classList.add('hidden');
+                cardWrapper.classList.remove('hidden');
+                btnCard.className = 'flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-yellow bg-cf-yellow text-cf-black font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer';
+                btnPix.className = 'flex-1 flex items-center justify-center gap-2 py-3 px-4 rounded border-2 border-cf-gray bg-cf-black text-white font-heading font-bold tracking-tight text-base uppercase tracking-wider transition-all cursor-pointer hover:border-cf-yellow';
+                // Initialize brick only when card is selected
+                initializePaymentBrick();
+            }
+        }
+
+        async function handleDirectPixPayment() {
+            const order = window.currentOrderData;
+            if (!order) return;
+
+            const payBtn = document.getElementById('pix-direct-pay-btn');
+            const loadingDiv = document.getElementById('pix-direct-loading');
+            payBtn.classList.add('hidden');
+            loadingDiv.classList.remove('hidden');
+
+            // Pré-salva o pedido no banco para passar na validação de segurança do backend
+            if (window.supabaseClient) {
+                try {
+                    const dbOrder = {
+                        id: order.id,
+                        client_name: order.clientName,
+                        client_phone: order.clientPhone,
+                        address: order.address,
+                        payment: 'Pix',
+                        notes: order.notes,
+                        delivery_date: order.deliveryDate,
+                        delivery_time: order.deliveryTime,
+                        items: order.items,
+                        subtotal: parseFloat(order.subtotal),
+                        discount: parseFloat(order.discount),
+                        total: parseFloat(order.total),
+                        status: 'Pendente'
+                    };
+                    const { error } = await window.supabaseClient.from('orders').insert([dbOrder]);
+                    if (error && error.code !== '23505') {
+                        console.error("Erro ao pré-salvar pedido:", error);
+                    }
+                } catch (err) {
+                    console.error("Erro na tentativa de pré-salvar pedido:", err);
+                }
+            }
+
+            // Gera email limpo para o Mercado Pago (API backend)
+            const cleanPhone = (order.clientPhone || '').replace(/\D/g, '');
+            const cleanName = (order.clientName || 'cliente')
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+            const validEmail = cleanPhone.length >= 10
+                ? `cliente_${cleanPhone}@cleanfoodsbotucatu.com.br`
+                : `${cleanName || 'cliente'}@cleanfoodsbotucatu.com.br`;
+
+            const paymentData = {
+                transaction_amount: parseFloat(order.total),
+                payment_method_id: 'pix',
+                description: `Pedido ${order.id} - ${order.clientName}`,
+                external_reference: order.id,
+                payer: {
+                    email: validEmail,
+                    first_name: order.clientName.split(' ')[0] || 'Cliente',
+                    last_name: order.clientName.split(' ').slice(1).join(' ') || 'CleanFoods'
+                }
+            };
+
+            try {
+                const response = await fetch(`${window.SUPABASE_URL}/functions/v1/create-payment`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${window.SUPABASE_ANON_KEY}`
+                    },
+                    body: JSON.stringify(paymentData),
+                });
+
+                const data = await response.json();
+
+                if (!response.ok || data.error || data.status === 'rejected' || data.code) {
+                    payBtn.classList.remove('hidden');
+                    loadingDiv.classList.add('hidden');
+                    alert("Erro no pagamento: " + (data.error || data.message || "Pagamento recusado"));
+                    return;
+                }
+
+                // Sucesso - finaliza e mostra QR Code
+                finalizeAndSaveOrder('Pix', data);
+            } catch (error) {
+                payBtn.classList.remove('hidden');
+                loadingDiv.classList.add('hidden');
+                alert("Erro de conexão ao processar pagamento.");
+                console.error(error);
+            }
+        }
+
+        function goBackToCheckoutForm() {
+            document.getElementById('payment-step-container').classList.add('hidden');
+            document.getElementById('checkout-form').classList.remove('hidden');
+            // Reset Pix button state
+            const payBtn = document.getElementById('pix-direct-pay-btn');
+            const loadingDiv = document.getElementById('pix-direct-loading');
+            if (payBtn) payBtn.classList.remove('hidden');
+            if (loadingDiv) loadingDiv.classList.add('hidden');
+        }
+
+        async function finalizeAndSaveOrder(paymentMethod, mpResponse, isPaymentInProcess = false) {
+            const order = window.currentOrderData;
+            order.payment = paymentMethod;
+
+            // Save Order to Supabase or fallback
+            if (window.supabaseClient) {
+                try {
+                    const dbOrder = {
+                        id: order.id,
+                        client_name: order.clientName,
+                        client_phone: order.clientPhone,
+                        address: order.address,
+                        payment: order.payment,
+                        notes: order.notes,
+                        delivery_date: order.deliveryDate,
+                        delivery_time: order.deliveryTime,
+                        items: order.items,
+                        subtotal: parseFloat(order.subtotal),
+                        discount: parseFloat(order.discount),
+                        total: parseFloat(order.total),
+                        status: order.status
+                    };
+                    const { error } = await window.supabaseClient.from('orders').upsert([dbOrder], { onConflict: 'id' });
+                    if (error) throw error;
+                } catch (err) {
+                    console.error("Erro ao enviar pedido para o Supabase, salvando localmente:", err);
+                    let orders = JSON.parse(localStorage.getItem('cleanfoods_orders')) || [];
+                    orders.push(order);
+                    localStorage.setItem('cleanfoods_orders', JSON.stringify(orders));
+                }
+            } else {
+                let orders = JSON.parse(localStorage.getItem('cleanfoods_orders')) || [];
+                orders.push(order);
+                localStorage.setItem('cleanfoods_orders', JSON.stringify(orders));
+            }
+
+            // Save Transaction automatically for Financeiro
+            const transactionObj = {
+                id: 'TX-' + order.id,
+                type: 'Entrada',
+                description: `Pedido #${order.id} - ${order.clientName}`,
+                value: parseFloat(order.total),
+                date: new Date().toISOString(),
+                category: 'Pedido'
+            };
+
+            if (window.supabaseClient) {
+                try {
+                    const { error } = await window.supabaseClient.from('transactions').insert([transactionObj]);
+                    if (error && error.code !== '23505') console.error("Erro ao salvar transação no Supabase:", error);
+                } catch (err) {
+                    console.error("Erro ao salvar transação:", err);
+                    let transactions = JSON.parse(localStorage.getItem('cleanfoods_transactions')) || [];
+                    transactions.push(transactionObj);
+                    localStorage.setItem('cleanfoods_transactions', JSON.stringify(transactions));
+                }
+            } else {
+                let transactions = JSON.parse(localStorage.getItem('cleanfoods_transactions')) || [];
+                transactions.push(transactionObj);
+                localStorage.setItem('cleanfoods_transactions', JSON.stringify(transactions));
+            }
+
+            // Show success
+            const orderIdSpan = document.getElementById('thank-order-id');
+            const orderTotalSpan = document.getElementById('thank-order-total');
+            const orderPaymentSpan = document.getElementById('thank-order-payment');
+            const orderDeliverySpan = document.getElementById('thank-order-delivery');
+
+            if (orderIdSpan) orderIdSpan.innerText = '#' + order.id;
+            if (orderTotalSpan) orderTotalSpan.innerText = 'R$ ' + parseFloat(order.total).toFixed(2).replace('.', ',');
+            if (orderPaymentSpan) orderPaymentSpan.innerText = paymentMethod;
+            if (orderDeliverySpan) {
+                const parts = order.deliveryDate.split('-');
+                const formattedDate = parts.length === 3 ? `${parts[2]}/${parts[1]}/${parts[0]}` : order.deliveryDate;
+                orderDeliverySpan.innerText = `${formattedDate} às ${order.deliveryTime}`;
+            }
+
+            const pixInfoContainer = document.getElementById('pix-payment-info');
+
+            const tyTitle = document.getElementById('thank-you-title');
+            const tySubtitle = document.getElementById('thank-you-subtitle');
+            const tyMessage = document.getElementById('thank-you-message');
+
+            let pollingInterval = null;
+            async function pollOrderStatus(orderId, mpPaymentId) {
+                if (pollingInterval) clearInterval(pollingInterval);
+                function onPaymentApproved() {
+                    clearInterval(pollingInterval);
+                    if (tyTitle) tyTitle.innerText = 'Pedido Recebido!';
+                    if (tySubtitle) tySubtitle.innerText = 'Seu pagamento foi confirmado!';
+                    if (tyMessage) tyMessage.innerText = 'Estamos preparando tudo. Em breve seu pedido estará pronto!';
+                    if (pixInfoContainer) pixInfoContainer.classList.add('hidden');
+                }
+                pollingInterval = setInterval(async () => {
+                    try {
+                        // Consulta o status diretamente no Mercado Pago (mais confiável que webhook)
+                        if (mpPaymentId) {
+                            const mpRes = await fetch(`${window.SUPABASE_URL}/functions/v1/check-payment-status`, {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json",
+                                    "Authorization": `Bearer ${window.SUPABASE_ANON_KEY}`
+                                },
+                                body: JSON.stringify({ mp_payment_id: String(mpPaymentId), order_id: orderId }),
+                            });
+                            const mpData = await mpRes.json();
+                            console.log('[Polling MP] status:', mpData.mp_status);
+                            if (mpRes.ok && mpData.approved) {
+                                onPaymentApproved();
+                                return;
+                            }
+                        }
+                        // Fallback: verifica o banco de dados
+                        const dbRes = await fetch(`${window.SUPABASE_URL}/functions/v1/check-order-status`, {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Authorization": `Bearer ${window.SUPABASE_ANON_KEY}`
+                            },
+                            body: JSON.stringify({ order_id: orderId }),
+                        });
+                        const dbData = await dbRes.json();
+                        if (dbRes.ok && dbData.status === 'Em Preparo') {
+                            onPaymentApproved();
+                        }
+                    } catch (e) {
+                        console.error('Polling error', e);
+                    }
+                }, 4000);
+            }
+
+            if (paymentMethod === 'Pix') {
+                if (tyTitle) tyTitle.innerText = 'Aguardando Pagamento';
+                if (tySubtitle) tySubtitle.innerText = 'Falta pouco!';
+                if (tyMessage) tyMessage.innerText = 'Realize o pagamento utilizando o QR Code ou Copia e Cola abaixo. Seu pedido será preparado automaticamente após a confirmação!';
+                if (mpResponse && mpResponse.point_of_interaction) {
+                    const qrCodeBase64 = mpResponse.point_of_interaction.transaction_data.qr_code_base64;
+                    const qrCodeString = mpResponse.point_of_interaction.transaction_data.qr_code;
+                    document.getElementById('pix-qr-code').src = `data:image/jpeg;base64,${qrCodeBase64}`;
+                    document.getElementById('pix-copia-cola').value = qrCodeString;
+                    if (pixInfoContainer) pixInfoContainer.classList.remove('hidden');
+                    // mpResponse.id é o ID do pagamento no Mercado Pago
+                    pollOrderStatus(order.id, mpResponse.id);
+                } else {
+                    if (pixInfoContainer) pixInfoContainer.classList.add('hidden');
+                }
+            } else if (isPaymentInProcess) {
+                // Cartão em análise pelo Mercado Pago
+                if (tyTitle) tyTitle.innerText = 'Pagamento em Análise';
+                if (tySubtitle) tySubtitle.innerText = 'Quase lá!';
+                if (tyMessage) tyMessage.innerText = 'Seu pagamento está sendo analisado pelo Mercado Pago. Assim que for aprovado, seu pedido será preparado automaticamente. Você será notificado!';
+                if (pixInfoContainer) pixInfoContainer.classList.add('hidden');
+                // Polling para verificar quando o pagamento for aprovado
+                if (mpResponse && mpResponse.id) {
+                    pollOrderStatus(order.id, mpResponse.id);
+                }
+            } else {
+                if (tyTitle) tyTitle.innerText = 'Pedido Recebido!';
+                if (tySubtitle) tySubtitle.innerText = 'Obrigado pela preferência!';
+                if (tyMessage) tyMessage.innerText = 'Seu combustível já está sendo preparado pela nossa equipe. Você pode acompanhar o status ou falar conosco a qualquer momento!';
+                if (pixInfoContainer) pixInfoContainer.classList.add('hidden');
+            }
+
+            const thankModal = document.getElementById('thank-you-modal');
+            if (thankModal) {
+                thankModal.classList.remove('hidden');
+                setTimeout(() => {
+                    thankModal.classList.remove('opacity-0');
+                }, 10);
+            }
+
+            const checkoutModal = document.getElementById('checkout-modal');
+            if (checkoutModal) {
+                checkoutModal.classList.add('opacity-0');
+                setTimeout(() => {
+                    checkoutModal.classList.add('hidden');
+                }, 300);
+            }
+
+            cart = {};
+            localStorage.setItem('cleanfoods_cart', JSON.stringify(cart));
+            if (typeof updateCartBadges === 'function') updateCartBadges();
+            if (typeof renderCart === 'function') renderCart();
+        }
+
+        let isBrickInitialized = false;
+        async function initializePaymentBrick() {
+            // Always re-initialize to reset Brick state for new orders
+            if (!window.MP_PUBLIC_KEY) {
+                console.error("Chave do Mercado Pago não configurada.");
+                return;
+            }
+
+            const order = window.currentOrderData;
+            const mp = new MercadoPago(window.MP_PUBLIC_KEY, { locale: 'pt-BR' });
+            const bricksBuilder = mp.bricks();
+
+            // Formata email limpo (sem acentos ou caracteres especiais) para o Mercado Pago aceitar automaticamente
+            const cleanPhone = (order.clientPhone || '').replace(/\D/g, '');
+            const cleanName = (order.clientName || 'cliente')
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+            const validEmail = cleanPhone.length >= 10
+                ? `cliente_${cleanPhone}@cleanfoodsbotucatu.com.br`
+                : `${cleanName || 'cliente'}@cleanfoodsbotucatu.com.br`;
+
+            const settings = {
+                initialization: {
+                    amount: parseFloat(order.total),
+                    preferenceId: null,
+                    payer: {
+                        email: validEmail,
+                        entityType: 'individual'
+                    },
+                },
+                customization: {
+                    paymentMethods: {
+                        creditCard: "all",
+                        debitCard: "all"
+                    },
+                    visual: {
+                        hidePaymentButton: false,
+                        hideFormTitle: true,
+                        style: {
+                            theme: 'default'
+                        }
+                    }
+                },
+                callbacks: {
+                    onReady: () => {
+                        const brickContainer = document.getElementById('paymentBrick_container');
+                        if (brickContainer) {
+                            brickContainer.classList.remove('hidden');
+                        }
+                    },
+                    onSubmit: ({ selectedPaymentMethod, formData }) => {
+                        formData.description = `Pedido ${order.id} - ${order.clientName}`;
+                        formData.external_reference = order.id;
+
+                        return new Promise(async (resolve, reject) => {
+                            // Pré-salva o pedido no banco para passar na validação de segurança do backend
+                            const pMethod = formData.payment_method_id === 'pix' ? 'Pix' : 'Cartão de Crédito';
+                            if (window.supabaseClient) {
+                                try {
+                                    const dbOrder = {
+                                        id: order.id,
+                                        client_name: order.clientName,
+                                        client_phone: order.clientPhone,
+                                        address: order.address,
+                                        payment: pMethod,
+                                        notes: order.notes,
+                                        delivery_date: order.deliveryDate,
+                                        delivery_time: order.deliveryTime,
+                                        items: order.items,
+                                        subtotal: parseFloat(order.subtotal),
+                                        discount: parseFloat(order.discount),
+                                        total: parseFloat(order.total),
+                                        status: 'Pendente'
+                                    };
+                                    const { error } = await window.supabaseClient.from('orders').insert([dbOrder]);
+                                    if (error && error.code !== '23505') {
+                                        console.error("Erro ao pré-salvar pedido:", error);
+                                    }
+                                } catch (err) {
+                                    console.error("Erro na tentativa de pré-salvar pedido:", err);
+                                }
+                            }
+
+                            fetch(`${window.SUPABASE_URL}/functions/v1/create-payment`, {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json",
+                                    "Authorization": `Bearer ${window.SUPABASE_ANON_KEY}`
+                                },
+                                body: JSON.stringify(formData),
+                            })
+                                .then(async (response) => {
+                                    const data = await response.json();
+                                    if (!response.ok || data.error || data.status === 'rejected' || data.code) {
+                                        reject();
+                                        alert("Erro no pagamento: " + (data.error || data.message || "Pagamento recusado"));
+                                        return;
+                                    }
+                                    resolve();
+
+                                    const pMethod = formData.payment_method_id === 'pix' ? 'Pix' : 'Cartão de Crédito';
+                                    const isInProcess = data.status === 'in_process' || data.status === 'pending';
+                                    finalizeAndSaveOrder(pMethod, data, isInProcess);
+                                })
+                                .catch((error) => {
+                                    reject();
+                                    alert("Erro de conexão ao processar pagamento.");
+                                });
+                        });
+                    },
+                    onError: (error) => {
+                        console.error(error);
+                        alert("Ocorreu um erro ao carregar o pagamento.");
+                    },
+                },
+            };
+
+            if (window.paymentBrickController) window.paymentBrickController.unmount();
+            window.paymentBrickController = await bricksBuilder.create("payment", "paymentBrick_container", settings);
+            isBrickInitialized = true;
+        }
+
+
+        function checkoutOrder() {
+            let hasItems = false;
+            for (const key in cart) {
+                hasItems = true;
+                break;
+            }
+
+            if (!hasItems) {
+                alert("Adicione pelo menos um item ao seu carrinho!");
+                return;
+            }
+
+            toggleCart();
+            toggleCheckoutModal();
+        }
+
+        // Filtering Logic
+        function filterCategory(category) {
+            activeCategory = category;
+
+            // Highlight active button
+            const categories = ['Todos', 'Frango', 'Patinho', 'Gourmet', 'Salgados'];
+            categories.forEach(cat => {
+                const btn = document.getElementById('filter-btn-' + cat);
+                if (btn) {
+                    if (cat === category) {
+                        btn.className = "bg-cf-yellow text-cf-black font-heading font-bold tracking-tight tracking-wider px-6 py-3 border-2 border-cf-yellow hover:bg-white hover:text-cf-black hover:border-white transition-all uppercase text-base rounded-sm cursor-hover shadow-lg";
+                    } else {
+                        btn.className = "bg-cf-darkgray text-white font-heading font-bold tracking-tight tracking-wider px-6 py-3 border-2 border-cf-gray hover:bg-cf-yellow hover:text-cf-black hover:border-cf-yellow transition-all uppercase text-base rounded-sm cursor-hover shadow-lg";
+                    }
+                }
+            });
+
+            renderDishesGrid();
+        }
+
+        function isValidPrice(v) {
+            if (!v) return false;
+            const s = String(v).trim();
+            if (s === '' || s === '—' || s === '-') return false;
+            const n = parseFloat(s.replace(',', '.'));
+            return !isNaN(n) && n > 0;
+        }
+
+        function renderDishPriceOptionsFull(dish) {
+            const hasP = isValidPrice(dish.priceP);
+            const hasG = isValidPrice(dish.priceG);
+
+            if (hasP && hasG) {
+                return `
+                    <div class="flex justify-between items-center text-sm font-semibold w-full">
+                        <span class="text-gray-400">P <span class="text-white bg-cf-gray px-2.5 py-1 rounded-sm ml-1.5 cursor-pointer hover:bg-cf-yellow hover:text-cf-black transition-all inline-flex items-center gap-1" onclick="addToCart('${dish.id}', 'P')">R$ ${dish.priceP} <i class="fa-solid fa-plus text-[10px]"></i></span></span>
+                        <span class="text-cf-yellow ml-2">G <span class="bg-cf-yellow text-cf-black px-2.5 py-1 rounded-sm ml-1.5 cursor-pointer hover:bg-white hover:text-cf-black transition-all inline-flex items-center gap-1" onclick="addToCart('${dish.id}', 'G')">R$ ${dish.priceG} <i class="fa-solid fa-plus text-[10px]"></i></span></span>
+                    </div>
+                `;
+            }
+
+            const singlePrice = hasP ? dish.priceP : (hasG ? dish.priceG : '');
+            const singleSize = hasP ? 'P' : 'G';
+
+            if (singlePrice) {
+                return `
+                    <div class="flex justify-center items-center text-sm font-semibold w-full">
+                        <span class="bg-cf-yellow text-cf-black px-4 py-1.5 rounded-sm font-bold text-sm cursor-pointer hover:bg-white hover:text-cf-black transition-all inline-flex items-center gap-1.5" onclick="addToCart('${dish.id}', '${singleSize}')">
+                            R$ ${singlePrice} <i class="fa-solid fa-plus text-xs"></i>
+                        </span>
+                    </div>
+                `;
+            }
+
+            return `<div class="flex justify-center items-center text-sm font-semibold w-full"><span class="text-gray-500 font-bold">—</span></div>`;
+        }
+
+        // Render Dishes in Grid
+        function renderDishesGrid() {
+            const grid = document.getElementById('dishes-grid');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+
+            let filteredDishes = activeCategory === 'Todos'
+                ? dishes
+                : dishes.filter(d => d.category === activeCategory);
+
+            filteredDishes = filteredDishes.filter(d => d.available !== false && !getDeletedDishIds().includes(d.id));
+
+            if (filteredDishes.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 text-gray-500 font-semibold italic">
+                        Nenhum prato disponível nesta categoria.
+                    </div>
+                `;
+                return;
+            }
+
+            filteredDishes.forEach(dish => {
+                const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23666%22%3E%3Cpath d=%22M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z%22/%3E%3C/svg%3E';
+                const imgSrc = dish.image || placeholderImg;
+
+                const card = document.createElement('div');
+                card.className = "bg-cf-darkgray border border-cf-yellow rounded-lg overflow-hidden flex flex-col justify-between hover:-translate-y-1.5 transition-transform duration-300 shadow-xl cursor-hover group";
+
+                let groupLabel = 'Linha ' + dish.category;
+                if (dish.category === 'Gourmet') groupLabel = 'Linha Gourmet';
+                if (dish.category === 'Salgados') groupLabel = 'Salgados e Doces Proteicos';
+
+                const priceHTML = renderDishPriceOptionsFull(dish);
+
+                card.innerHTML = `
+                    <div class="h-48 bg-cf-black overflow-hidden relative border-b-4 border-cf-yellow cursor-pointer group-hover:opacity-90" onclick="openDishDetail('${dish.id}')">
+                        <img src="${imgSrc}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute top-3 left-3 bg-cf-yellow text-cf-black text-[10px] uppercase font-bold px-2 py-1 rounded shadow pointer-events-none">${groupLabel}</div>
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center pointer-events-none">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity transform scale-50 group-hover:scale-100 duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <h4 class="font-heading font-bold tracking-tight text-2xl text-white uppercase mb-4">${dish.name}</h4>
+                        <div class="pt-4 border-t border-gray-800 mt-auto">
+                            ${priceHTML}
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Dish Detail Modal Functions
+        function openDishDetail(dishId) {
+            const dish = dishes.find(d => d.id === dishId);
+            if (!dish) return;
+
+            const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23666%22%3E%3Cpath d=%22M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z%22/%3E%3C/svg%3E';
+            const imgEl = document.getElementById('dish-detail-img');
+            imgEl.src = dish.image || placeholderImg;
+
+            document.getElementById('dish-detail-category').innerText = dish.category === 'Gourmet' ? 'Linha Gourmet' : 'Linha ' + dish.category;
+            document.getElementById('dish-detail-name').innerText = dish.name;
+
+            const pContainer = document.getElementById('dish-detail-p');
+            const gContainer = document.getElementById('dish-detail-g');
+
+            const hasP = isValidPrice(dish.priceP);
+            const hasG = isValidPrice(dish.priceG);
+
+            if (hasP && hasG) {
+                pContainer.style.display = 'flex';
+                pContainer.innerHTML = `<span class="text-gray-400 font-bold">P (225g)</span>
+                    <button onclick="addToCart('${dish.id}', 'P'); closeDishDetail();" class="text-white bg-cf-gray px-4 py-2 rounded-sm cursor-pointer hover:bg-cf-yellow hover:text-cf-black transition-all font-bold text-sm inline-flex items-center gap-2">R$ ${dish.priceP} <i class="fa-solid fa-cart-plus"></i></button>`;
+                gContainer.style.display = 'flex';
+                gContainer.innerHTML = `<span class="text-cf-yellow font-bold">G (450g)</span>
+                    <button onclick="addToCart('${dish.id}', 'G'); closeDishDetail();" class="bg-cf-yellow text-cf-black px-4 py-2 rounded-sm cursor-pointer hover:bg-white hover:text-cf-black transition-all font-bold text-sm inline-flex items-center gap-2">R$ ${dish.priceG} <i class="fa-solid fa-cart-plus"></i></button>`;
+            } else {
+                const singlePrice = hasP ? dish.priceP : (hasG ? dish.priceG : '');
+                const singleSize = hasP ? 'P' : 'G';
+                pContainer.style.display = 'flex';
+                pContainer.innerHTML = `<span class="text-gray-300 font-bold">Tamanho Único</span>
+                    <button onclick="addToCart('${dish.id}', '${singleSize}'); closeDishDetail();" class="bg-cf-yellow text-cf-black px-4 py-2 rounded-sm cursor-pointer hover:bg-white hover:text-cf-black transition-all font-bold text-sm inline-flex items-center gap-2">R$ ${singlePrice} <i class="fa-solid fa-cart-plus"></i></button>`;
+                gContainer.style.display = 'none';
+            }
+
+            const n = dish.nutrition || { ...defaultNutrition };
+            document.getElementById('det-energy').innerText = n.energy || '-';
+            document.getElementById('det-carbs').innerText = n.carbs || '-';
+            document.getElementById('det-proteins').innerText = n.proteins || '-';
+            document.getElementById('det-total-fat').innerText = n.totalFat || '-';
+            document.getElementById('det-sat-fat').innerText = n.saturatedFat || '-';
+            document.getElementById('det-trans-fat').innerText = n.transFat || '-';
+            document.getElementById('det-fiber').innerText = n.fiber || '-';
+            document.getElementById('det-sodium').innerText = n.sodium || '-';
+
+            // Ensure accordion is closed when opening new dish
+            const nutriContent = document.getElementById('nutrition-content');
+            const nutriIcon = document.getElementById('nutrition-icon');
+            if (nutriContent) nutriContent.classList.add('hidden');
+            if (nutriIcon) nutriIcon.classList.remove('rotate-180');
+
+            const modal = document.getElementById('dish-detail-modal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function closeDishDetail() {
+            const modal = document.getElementById('dish-detail-modal');
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function toggleNutrition() {
+            const content = document.getElementById('nutrition-content');
+            const icon = document.getElementById('nutrition-icon');
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function openComboModal() {
+            const modal = document.getElementById('combo-promo-modal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+        }
+
+        function selectComboGoal(goal) {
+            localStorage.setItem('cleanfoods_combo_goal', goal);
+            sessionStorage.setItem('cleanfoods_promo_active', 'true');
+            closeComboModal();
+            renderCart();
+            updateTicketHighlight(goal);
+            // Optional: Provide feedback toast
+            const toast = document.getElementById('toast-success');
+            const toastText = document.getElementById('toast-text');
+            if (toast && toastText) {
+                toastText.innerText = `OBJETIVO DEFINIDO: ${goal} MARMITAS!`;
+                toast.classList.remove('opacity-0', 'pointer-events-none');
+                toast.classList.add('opacity-100');
+                if (window.innerWidth < 768) {
+                    toast.classList.replace('-translate-y-24', 'translate-y-4');
+                } else {
+                    toast.classList.replace('translate-y-24', '-translate-y-6');
+                }
+                setTimeout(() => {
+                    toast.classList.remove('opacity-100');
+                    toast.classList.add('opacity-0', 'pointer-events-none');
+                    if (window.innerWidth < 768) {
+                        toast.classList.replace('translate-y-4', '-translate-y-24');
+                    } else {
+                        toast.classList.replace('-translate-y-6', 'translate-y-24');
+                    }
+                }, 3000);
+            }
+        }
+
+        function closeComboModal() {
+            const modal = document.getElementById('combo-promo-modal');
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function updateTicketHighlight(selectedGoal) {
+            if (!selectedGoal) return;
+            [10, 20, 30].forEach(goal => {
+                const ticket = document.getElementById(`promo-ticket-${goal}`);
+                const action = document.getElementById(`promo-ticket-action-${goal}`);
+                if (!ticket || !action) return;
+
+                if (goal === parseInt(selectedGoal)) {
+                    ticket.classList.add('ring-[6px]', 'ring-white', 'scale-105', 'z-20', 'shadow-[0_0_30px_rgba(255,255,255,0.6)]');
+                    action.innerHTML = `<i class="fa-solid fa-check text-cf-yellow"></i><span class="text-cf-yellow">ATIVO</span>`;
+                    action.classList.remove('text-cf-black', 'opacity-70');
+                    action.classList.add('bg-[#1a1a1a]', 'text-cf-yellow', 'opacity-100', '-mx-2', '-mb-2', 'px-2', 'pb-3', 'pt-3', 'rounded-b-sm');
+                } else {
+                    ticket.classList.remove('ring-[6px]', 'ring-white', 'scale-105', 'z-20', 'shadow-[0_0_30px_rgba(255,255,255,0.6)]');
+                    action.innerHTML = `<i class="fa-solid fa-ticket hidden md:inline-block"></i><span>Selecionar</span>`;
+                    action.classList.remove('bg-[#1a1a1a]', 'text-cf-yellow', 'opacity-100', '-mx-2', '-mb-2', 'px-2', 'pb-3', 'pt-3', 'rounded-b-sm');
+                    action.classList.add('text-cf-black', 'opacity-70');
+                }
+            });
+        }
+
+        window.onload = function () {
+            // Handle Payment Return
+            let urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const order_id = urlParams.get('order_id');
+
+            if (status === 'success' || status === 'pending') {
+                const pendingOrder = JSON.parse(localStorage.getItem('cleanfoods_pending_order'));
+                if (pendingOrder && pendingOrder.id === order_id) {
+                    const orderIdSpan = document.getElementById('thank-order-id');
+                    const orderTotalSpan = document.getElementById('thank-order-total');
+                    const orderPaymentSpan = document.getElementById('thank-order-payment');
+                    const orderDeliverySpan = document.getElementById('thank-order-delivery');
+
+                    if (orderIdSpan) orderIdSpan.innerText = '#' + pendingOrder.id;
+                    if (orderTotalSpan) orderTotalSpan.innerText = 'R$ ' + pendingOrder.total.replace('.', ',');
+                    if (orderPaymentSpan) orderPaymentSpan.innerText = pendingOrder.payment;
+                    if (orderDeliverySpan) {
+                        const parts = pendingOrder.deliveryDate.split('-');
+                        const formattedDate = parts.length === 3 ? `${parts[2]}/${parts[1]}/${parts[0]}` : pendingOrder.deliveryDate;
+                        orderDeliverySpan.innerText = `${formattedDate} às ${pendingOrder.deliveryTime}`;
+                    }
+
+                    const thankModal = document.getElementById('thank-you-modal');
+                    if (thankModal) {
+                        thankModal.classList.remove('hidden');
+                        setTimeout(() => {
+                            thankModal.classList.remove('opacity-0');
+                        }, 10);
+                    }
+
+                    // Clear the cart
+                    cart = {};
+                    localStorage.setItem('cleanfoods_cart', JSON.stringify(cart));
+                    localStorage.removeItem('cleanfoods_pending_order');
+
+                    // Remove url params
+                    window.history.replaceState({}, document.title, window.location.pathname);
+                }
+            } else if (status === 'failure') {
+                alert('Ocorreu um erro no pagamento ou ele foi recusado. Por favor, tente novamente.');
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+
+            // Render dishes instantly from cache or defaults
+            dishes = JSON.parse(localStorage.getItem('cleanfoods_dishes_v2')) || defaultDishes;
+            renderDishesGrid();
+
+            // Trigger GSAP reveal animations immediately
+            gsap.from(".reveal-up", {
+                duration: 1,
+                y: 30,
+                opacity: 0,
+                stagger: 0.2,
+                ease: "power2.out"
+            });
+
+            // Load fresh data from Supabase in background
+            loadDishes().then(() => {
+                renderDishesGrid();
+                localStorage.setItem('cleanfoods_dishes_v2', JSON.stringify(dishes));
+            });
+
+            // Load other configs asynchronously
+            loadSettings();
+            loadCoupons();
+            updateCartBadges();
+
+            const storedGoal = localStorage.getItem('cleanfoods_combo_goal');
+            if (storedGoal) {
+                updateTicketHighlight(storedGoal);
+            }
+
+            renderCart();
+            initCheckoutFormStatePersistence();
+
+            // Check URL for Promo Code
+            urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('promo') === 'combo') {
+                setTimeout(openComboModal, 800);
+            } else if (urlParams.get('promo') === 'active') {
+                sessionStorage.setItem('cleanfoods_promo_active', 'true');
+                renderCart(); // re-render to show banners immediately if they were hidden
+            }
+        };
+    </script>
+</body>
+
+</html>

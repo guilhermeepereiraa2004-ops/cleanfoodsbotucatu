@@ -1,0 +1,14 @@
+# Arquivos locais e do sistema
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Credenciais e configurações locais
+.env
+.env.*
+*.local
+
+# Dependências e saídas temporárias
+node_modules/
+dist/
+*.log
